@@ -8,6 +8,9 @@ module.exports = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         hero: 'url("/heroFull.jpg")',
       },
+      height: {
+        100: "30rem",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
