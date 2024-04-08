@@ -9,7 +9,7 @@ module.exports = {
         hero: 'url("/heroFull.jpg")',
       },
       height: {
-        100: "30rem",
+        100: "40rem",
       },
     },
   },

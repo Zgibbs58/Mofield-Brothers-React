@@ -2,6 +2,7 @@
 import Link from "next/link";
 import ServiceCards from "@/components/ServiceCards";
 import Image from "next/image";
+import Gallery from "@/components/gallery";
 
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="hero h-100 relative bg-hero">
-        <div className="hero-overlay bg-black bg-opacity-30"></div>
+        <div className="hero-overlay bg-black bg-opacity-35"></div>
         <div className="hero-content text-center">
           <div className="max-w-md text-base-100">
             <h1 className="text-3xl md:text-5xl font-bold">Mofield Brothers</h1>
@@ -34,6 +35,7 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <Gallery />
       
     </main>
   );

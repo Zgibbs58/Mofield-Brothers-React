@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <nav className="navbar bg-base-100 sticky top-0 z-10">
         <div className="flex-1">
-          <Link href="/"><Image width={250} height={100} src="/mofieldLogo.png" alt="Mofield Logo" /></Link>
+          <Link href="/"><Image className='hidden md:block' width={250} height={100} src="/mofieldLogo.png" alt="Mofield Logo" /><Image className='block md:hidden' width={175} height={50} src="/mofieldLogo.png" alt="Mofield Logo" /></Link>
         </div>
         <div className="md:hidden">
           <button tabIndex={0} role="button" className="btn btn-ghost btn-circle" onClick={toggleMenu}>

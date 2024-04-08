@@ -15,7 +15,9 @@
     "next": "^14.1.4",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.2.2"
+    "react-photo-album": "^2.3.1",
+    "tailwind-merge": "^2.2.2",
+    "yet-another-react-lightbox": "^3.17.2"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.12",
