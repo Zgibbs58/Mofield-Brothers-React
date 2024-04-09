@@ -43,12 +43,12 @@ const Header = () => {
             )}
           </AnimatePresence>
         <div className="hidden md:flex flex-none">
-          <ul className="menu menu-horizontal gap-3 px-1">
-            <Link className="hover:text-primary" href="/">Home</Link>
-            <Link className="hover:text-primary" href="/services">Services</Link>
-            <Link className="hover:text-primary" href="/about">About</Link>
-            <Link className="hover:text-primary" href="/gallery">Gallery</Link>
-            <Link className="hover:text-primary" href="/contact">Contact</Link>
+          <ul className="menu menu-horizontal gap-6 px-1 text-lg">
+            <Link className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="/">Home</Link>
+            <Link className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="/services">Services</Link>
+            <Link className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="/about">About</Link>
+            <Link className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="/gallery">Gallery</Link>
+            <Link className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-secondary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="/contact">Contact</Link>
           </ul>
         </div>
       </nav>

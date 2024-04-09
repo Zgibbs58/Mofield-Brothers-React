@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Heebo } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
+import Header from "@/components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const rokkitt = Heebo({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mofield Brothers Construction Company, trusted Tennessee contractors",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="mytheme" lang="en">
-      <body className={inter.className}>
+      <body className={rokkitt.className}>
         <Header />
         {children}</body>
     </html>
