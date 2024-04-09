@@ -7,6 +7,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         hero: 'url("/heroLg.jpg")',
+        backgroundLines: 'url("/roadsideLg.jpg")',
       },
       height: {
         100: "40rem",
@@ -24,7 +25,7 @@ module.exports = {
 
           accent: "#fde047",
 
-          neutral: "#f3f4f6",
+          neutral: "#6b7280",
 
           "base-100": "#f3f4f6",
 

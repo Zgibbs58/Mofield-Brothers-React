@@ -13,7 +13,7 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="navbar bg-base-100 sticky top-0 z-10">
+    <nav className="navbar bg-base-100 sticky top-0 z-30">
         <div className="flex-1">
           <Link href="/"><Image className='hidden md:block' width={250} height={100} src="/mofieldLogo.png" alt="Mofield Logo" /><Image className='block md:hidden' width={175} height={50} src="/mofieldLogo.png" alt="Mofield Logo" /></Link>
         </div>

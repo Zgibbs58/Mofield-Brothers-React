@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --bg: #f7fafc;
-  --text: #2d3748;
-  --primary: #3182ce;
-  --secondary: #2b6cb0;
-  --accent: #9f7aea;
+  --bg: #f3f4f6;
+  --text: #1f2937;
+  --primary: #facc15;
+  --secondary: #1f2937;
+  --accent: #6b7280;
   --success: #38a169;
   --warning: #dd6b20;
   --danger: #e53e3e;
@@ -15,11 +15,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1a202c;
-    --text: #e2e8f0;
-    --primary: #2b6cb0;
-    --secondary: #2c5282;
-    --accent: #9f7aea;
+    --bg: #1f2937;
+    --text: #f3f4f6;
+    --primary: #facc15;
+    --secondary: #1f2937;
+    --accent: #6b7280;
     --success: #38a169;
     --warning: #dd6b20;
     --danger: #e53e3e;
@@ -27,4 +27,15 @@
 }
 
 body {
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+/* React photo album style for hovering images */
+.react-photo-album img {
+  transition: transform 0.3s ease-in-out; /* Smooth easing in and out */
+}
+
+.react-photo-album img:hover {
+  transform: scale(1.02); /* Scale the item on hover */
 }
