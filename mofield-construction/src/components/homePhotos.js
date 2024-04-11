@@ -1,33 +1,103 @@
 const homePhotos = [
   {
-    src: "/directionalDrillSm.jpg",
-    width: 500,
-    height: 240,
+    src: "/mike&RobertSm.jpg",
+    width: 200,
+    height: 200,
     srcSet: [
-      { src: "/directionalDrillSm.jpg", width: 400, height: 150 },
-      { src: "/directionalDrillSm.jpg", width: 200, height: 50 },
+      { src: "/mike&RobertSm.jpg", width: 200, height: 200 },
+      { src: "/mike&RobertSm.jpg", width: 100, height: 100 },
     ],
-    largeSrc: "/directionalDrillLg.jpg",
+    largeSrc: "/mike&RobertLg.jpg",
   },
   {
-    src: "/excavationSm.jpg",
+    src: "/pipeCollabSm.jpg",
+    width: 200,
+    height: 200,
+    srcSet: [
+      { src: "/pipeCollabSm.jpg", width: 200, height: 200 },
+      { src: "/pipeCollabSm.jpg", width: 100, height: 100 },
+    ],
+    largeSrc: "/pipeCollabLg.jpg",
+  },
+  {
+    src: "/trenchWaterSm.jpg",
     width: 400,
     height: 200,
     srcSet: [
-      { src: "/excavationSm.jpg", width: 800, height: 450 },
-      { src: "/excavationSm.jpg", width: 400, height: 225 },
+      { src: "/trenchWaterSm.jpg", width: 200, height: 200 },
+      { src: "/trenchWaterSm.jpg", width: 100, height: 100 },
     ],
-    largeSrc: "/excavationLg.jpg",
+    largeSrc: "/trenchWaterJg.jpg",
   },
   {
-    src: "/truckSm.jpg",
-    width: 1600,
-    height: 900,
+    src: "/twoWaterLineSm.jpg",
+    width: 200,
+    height: 200,
     srcSet: [
-      { src: "/truckSm.jpg", width: 800, height: 450 },
-      { src: "/truckSm.jpg", width: 400, height: 225 },
+      { src: "/twoWaterLineSm.jpg", width: 200, height: 200 },
+      { src: "/twoWaterLineSm.jpg", width: 100, height: 100 },
     ],
-    largeSrc: "/truckLg.jpg",
+    largeSrc: "/twoWaterLineLg.jpg",
+  },
+  {
+    src: "/loadedDrillLg.jpg",
+    width: 400,
+    height: 200,
+    srcSet: [
+      { src: "/loadedDrillLg.jpg", width: 200, height: 200 },
+      { src: "/loadedDrillLg.jpg", width: 100, height: 100 },
+    ],
+    largeSrc: "/loadedDrillLg.jpg",
+  },
+  {
+    src: "/pipeConstructionSm.jpg",
+    width: 200,
+    height: 200,
+    srcSet: [
+      { src: "/pipeConstructionSm.jpg", width: 200, height: 200 },
+      { src: "/pipeConstructionSm.jpg", width: 100, height: 100 },
+    ],
+    largeSrc: "/pipeConstructionLg.jpg",
+  },
+  {
+    src: "/pipeConstructionSm.jpg",
+    width: 200,
+    height: 200,
+    srcSet: [
+      { src: "/pipeConstructionSm.jpg", width: 200, height: 200 },
+      { src: "/pipeConstructionSm.jpg", width: 100, height: 100 },
+    ],
+    largeSrc: "/pipeConstructionLg.jpg",
+  },
+  {
+    src: "/pipeConstructionSm.jpg",
+    width: 200,
+    height: 200,
+    srcSet: [
+      { src: "/pipeConstructionSm.jpg", width: 200, height: 200 },
+      { src: "/pipeConstructionSm.jpg", width: 100, height: 100 },
+    ],
+    largeSrc: "/pipeConstructionLg.jpg",
+  },
+  {
+    src: "/pipeConstructionSm.jpg",
+    width: 200,
+    height: 200,
+    srcSet: [
+      { src: "/pipeConstructionSm.jpg", width: 200, height: 200 },
+      { src: "/pipeConstructionSm.jpg", width: 100, height: 100 },
+    ],
+    largeSrc: "/pipeConstructionLg.jpg",
+  },
+  {
+    src: "/pipeConstructionSm.jpg",
+    width: 200,
+    height: 200,
+    srcSet: [
+      { src: "/pipeConstructionSm.jpg", width: 200, height: 200 },
+      { src: "/pipeConstructionSm.jpg", width: 100, height: 100 },
+    ],
+    largeSrc: "/pipeConstructionLg.jpg",
   },
 ];
 

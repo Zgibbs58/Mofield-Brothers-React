@@ -12,15 +12,15 @@ type ServiceCardsProps = {
 
 const ServiceCards: React.FC<ServiceCardsProps> = ({img, title, text}) => {
   return (
-    <div className="card bg-primary text-secondary card-compact w-full h-full shadow-xl">
+    <div className="card card-compact bg-base-200 w-full h-full shadow-xl">
             <figure><Image width={700} height={200} src={img} alt={title}></Image></figure>
-            <div className="card-body">
+            <div className="card-body gap-4">
               <h2 className="card-title text-xl md:text-2xl">
                 {title}
               </h2>
               <p>{text}</p>
-              <div className="card-actions justify-end">
-                <Link href={'/services'} className="btn btn-outline btn-secondary hover:btn-active  hover:scale-105 ease-in-out duration-300">Learn More</Link>
+              <div className="card-actions justify-start">
+                <Link href={'/services'} className="btn btn-outline btn-base-content hover:btn-active ease-in-out duration-300">Learn More</Link>
             </div>
             </div>
     </ div>

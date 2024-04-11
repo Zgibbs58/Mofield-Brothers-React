@@ -3,32 +3,48 @@
 @tailwind utilities;
 
 :root {
-  --bg: #f3f4f6;
+  /* --bg: #f3f4f6;
   --text: #1f2937;
   --primary: #facc15;
   --secondary: #1f2937;
-  --accent: #6b7280;
+  --accent: #a3a7c4;
   --success: #38a169;
   --warning: #dd6b20;
-  --danger: #e53e3e;
+  --danger: #e53e3e; */
+  --logo-light: url("/mofieldLogo.png");
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1f2937;
+    /* --bg: #1f2937;
     --text: #f3f4f6;
     --primary: #facc15;
     --secondary: #1f2937;
     --accent: #6b7280;
     --success: #38a169;
     --warning: #dd6b20;
-    --danger: #e53e3e;
+    --danger: #e53e3e; */
+    --logo-dark: url("/mofieldLogoWhite.png");
   }
 }
 
 body {
   color: var(--text);
   background-color: var(--bg);
+}
+
+/* Light mode logo */
+@media (prefers-color-scheme: light) {
+  .logo {
+    background-image: var(--logo-light);
+  }
+}
+
+/* Dark mode logo*/
+@media (prefers-color-scheme: dark) {
+  .logo {
+    background-image: var(--logo-dark);
+  }
 }
 
 /* React photo album style for hovering images */

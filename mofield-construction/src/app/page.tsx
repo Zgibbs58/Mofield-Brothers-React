@@ -21,9 +21,9 @@ export default function Home() {
         <div className="hero-overlay bg-black bg-opacity-35"></div>
         <div className={`hero-content text-center`}>
           <div className="md:max-w-2xl text-base-100">
-            <h1 className={`text-4xl md:text-6xl font-bold ${bigShoulders.className}`}>Mofield Brothers</h1>
-            <p className={`pb-4 pt-1 md:py-6 text-xl md:text-4xl font-semibold ${bigShoulders.className}`}>Family Owned & Operated Since 1961</p>
-            <button className="bg-primary text-secondary border-2 border-primary hover:bg-opacity-0 hover:border-2 hover:border-base-100 hover:text-base-100 ease-in-out duration-300 rounded-md font-semibold text-4xl px-8 py-5">Contact Us</button>
+            <h1 className={`text-4xl dark:text-primary md:text-6xl font-bold ${bigShoulders.className}`}>Mofield Brothers</h1>
+            <p className={`pb-4 pt-1 dark:text-primary md:py-6 text-xl md:text-4xl font-semibold ${bigShoulders.className}`}>Family Owned & Operated Since 1961</p>
+            <button className="text-base-content bg-primary dark:bg-base-content dark:text-secondary hover:bg-yellow-600 btn-lg ease-in-out duration-300 rounded-md font-semibold text-4xl">Contact Us</button>
           </div>
         </div>
       </div>
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </section>
         <section className="pb-20 px-6 md:px-12">
-          <h3 className="text-5xl font-semibold text-center py-12 text-secondary">Gallery</h3>
+          <h3 className="text-5xl font-semibold text-center py-12">Gallery</h3>
           <Gallery photos={photos}/>
         </section>
       

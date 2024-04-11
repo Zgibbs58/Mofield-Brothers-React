@@ -14,8 +14,16 @@ const Gallery = ({photos}: {photos: any[]}) => {
     <>
       <PhotoAlbum
         photos={photos}
-        layout="rows"
-        targetRowHeight={300}
+        sizes={{
+          size: "992px",
+          sizes: [
+          { viewport: "(max-width: 767px)", size: "calc(100vw - 32px)" },
+          { viewport: "(max-width: 1279px)", size: "calc(100vw - 288px)" },
+          ],
+        }}
+        breakpoints={[500, 700, 1200]}
+        layout="columns"
+        rowConstraints={{minPhotos: 2, maxPhotos: 4}}
         onClick={({ index }) => {
           setSelectedIndex(index);
           setLightboxOpen(true);
