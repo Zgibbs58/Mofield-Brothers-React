@@ -142,7 +142,7 @@ const Contact = () => {
                     First Name
                   </label>
                   <input
-                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="appearance-none block w-full bg-slate-200 border border-gray-200 rounded py-3 px-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="firstName"
                     type="text"
                     placeholder="Jane"
@@ -158,7 +158,7 @@ const Contact = () => {
                     Last Name
                   </label>
                   <input
-                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 pb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="appearance-none block w-full bg-slate-200 border border-gray-200 rounded py-3 px-4 pb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="lastName"
                     type="text"
                     placeholder="Doe"
@@ -176,7 +176,7 @@ const Contact = () => {
                     E-mail
                   </label>
                   <input
-                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 pb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="appearance-none block w-full bg-slate-200 border border-gray-200 rounded py-3 px-4 pb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="email"
                     placeholder="user@gmail.com"
                     type="email"
@@ -194,7 +194,7 @@ const Contact = () => {
                     Message
                   </label>
                   <textarea
-                    className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 pb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                    className=" no-resize appearance-none block w-full bg-slate-200 border border-gray-200 rounded py-3 px-4 pb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                     id="message"
                     name="message"
                     value={message}
@@ -205,7 +205,7 @@ const Contact = () => {
                 </div>
               </div>
               <button
-                className="w-full my-6 py-2 text-xl font-bold text-gray-500 bg-gray-100 rounded-full hover:bg-emerald-500 hover:text-white border-2 border-gray-500 hover:border-emerald-500 ease-in-out duration-300"
+                className="btn btn-warning w-full my-6 py-2 text-xl font-bold rounded-full ease-in-out duration-300"
                 type="submit"
               >
                 Send
