@@ -1,12 +1,8 @@
 const homePhotos = [
   {
-    src: "/mike&RobertSm.jpg",
-    width: 200,
+    src: "/mike&RobertLg.jpg",
+    width: 400,
     height: 200,
-    srcSet: [
-      { src: "/mike&RobertSm.jpg", width: 200, height: 200 },
-      { src: "/mike&RobertSm.jpg", width: 100, height: 100 },
-    ],
     largeSrc: "/mike&RobertLg.jpg",
   },
   {
@@ -21,13 +17,13 @@ const homePhotos = [
   },
   {
     src: "/trenchWaterSm.jpg",
-    width: 400,
+    width: 200,
     height: 200,
     srcSet: [
-      { src: "/trenchWaterSm.jpg", width: 200, height: 200 },
-      { src: "/trenchWaterSm.jpg", width: 100, height: 100 },
+      { src: "/trenchWaterLg.jpg", width: 200, height: 200 },
+      { src: "/trenchWaterLg.jpg", width: 100, height: 100 },
     ],
-    largeSrc: "/trenchWaterJg.jpg",
+    largeSrc: "/trenchWaterLg.jpg",
   },
   {
     src: "/twoWaterLineSm.jpg",
@@ -50,14 +46,14 @@ const homePhotos = [
     largeSrc: "/loadedDrillLg.jpg",
   },
   {
-    src: "/pipeConstructionSm.jpg",
-    width: 200,
+    src: "/duckRiverLg.jpg",
+    width: 400,
     height: 200,
     srcSet: [
-      { src: "/pipeConstructionSm.jpg", width: 200, height: 200 },
-      { src: "/pipeConstructionSm.jpg", width: 100, height: 100 },
+      { src: "/duckRiverLg.jpg", width: 200, height: 200 },
+      { src: "/duckRiverLg.jpg", width: 100, height: 100 },
     ],
-    largeSrc: "/pipeConstructionLg.jpg",
+    largeSrc: "/duckRiverLg.jpg",
   },
   {
     src: "/pipeConstructionSm.jpg",
@@ -70,34 +66,14 @@ const homePhotos = [
     largeSrc: "/pipeConstructionLg.jpg",
   },
   {
-    src: "/pipeConstructionSm.jpg",
+    src: "/roadsideSm.jpg",
     width: 200,
     height: 200,
     srcSet: [
-      { src: "/pipeConstructionSm.jpg", width: 200, height: 200 },
-      { src: "/pipeConstructionSm.jpg", width: 100, height: 100 },
+      { src: "/roadsideSm.jpg", width: 200, height: 200 },
+      { src: "/roadsideSm.jpg", width: 100, height: 100 },
     ],
-    largeSrc: "/pipeConstructionLg.jpg",
-  },
-  {
-    src: "/pipeConstructionSm.jpg",
-    width: 200,
-    height: 200,
-    srcSet: [
-      { src: "/pipeConstructionSm.jpg", width: 200, height: 200 },
-      { src: "/pipeConstructionSm.jpg", width: 100, height: 100 },
-    ],
-    largeSrc: "/pipeConstructionLg.jpg",
-  },
-  {
-    src: "/pipeConstructionSm.jpg",
-    width: 200,
-    height: 200,
-    srcSet: [
-      { src: "/pipeConstructionSm.jpg", width: 200, height: 200 },
-      { src: "/pipeConstructionSm.jpg", width: 100, height: 100 },
-    ],
-    largeSrc: "/pipeConstructionLg.jpg",
+    largeSrc: "/roadsideLg.jpg",
   },
 ];
 

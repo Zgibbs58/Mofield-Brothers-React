@@ -16,14 +16,14 @@ const Header = () => {
     <>
     <nav className="navbar bg-base-100 sticky top-0 z-30 md:px-8 py-4">
         <div className="flex-1">
-          <Link href="/">
+          <Link href="/" aria-label='Home Link'>
             {/* <Image className='hidden md:block' width={250} height={100} src={logoSrc} alt="Mofield Logo" />
             <Image className='block md:hidden' width={175} height={50} src={logoSrc} alt="Mofield Logo" /> */}
-            <div className='logo w-48 h-6 md:h-12 md:w-80 bg-contain bg-left-center bg-no-repeat'></div>
+            <div className='logo w-48 h-6 md:h-10 md:w-60 lg:h-12 lg:w-80 bg-contain bg-left-center bg-no-repeat'></div>
             </Link>
         </div>
         <div className="md:hidden">
-          <button tabIndex={0} role="button" className="btn btn-ghost btn-circle" onClick={toggleMenu}>
+          <button tabIndex={0} role="button" className="btn btn-ghost btn-circle" onClick={toggleMenu} aria-label='Menu'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-7 h-7 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
           </button>
         </div>
