@@ -127,14 +127,10 @@ export default function Contact() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ ease: "easeOut", duration: 0.5 }}
-            className={`text-4xl md:text-6xl font-semibold text-primary dark:text-base-content py-4 md:py-12 ${bitter.className}`}
+            className={`text-4xl md:text-6xl font-semibold py-4 md:py-12 ${bitter.className}`}
           >
             Get in Touch
           </motion.h3>
-          <p className="invisible">
-            Lorem ipsum dolor, <span className="hidden xs:inline">sit amet consectetur adipisicing elit. Eos alias deserunt</span>
-            <span className="hidden sm:inline">recusandae assumenda tempora doloribus rem. Rem dolore, labore dicta fuga modi quae voluptates.</span>
-          </p>
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
