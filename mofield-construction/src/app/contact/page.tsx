@@ -3,8 +3,11 @@
 import {useState, useEffect} from 'react'
 import { motion } from "framer-motion";
 import { validateEmail } from "../../../libs/utils";
+import { Bitter } from "next/font/google";
 
-const Contact = () => {
+const bitter = Bitter({subsets: ["latin"] });
+
+export default function Contact() {
    const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -115,14 +118,18 @@ const Contact = () => {
         <p className="text-lg mb-4">I&apos;ll review your message and get back to you as soon as possible.</p>{" "}
       </Modal> */}
       <div className="overflow-x-hidden">
+        <div className="hero h-50 md:h-60 relative bg-heroLg bg-center">
+        <div className="hero-overlay bg-black bg-opacity-45"></div>
+            <h3 className={`text-6xl font-semibold text-primary dark:text-base-content py-12 ${bitter.className}`}>Contact</h3>
+        </div>
         <div className="mx-8 mt-6 mb-24 sm:mx-20 lg:mx-32">
           <motion.h3
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ ease: "easeOut", duration: 0.5 }}
-            className="text-6xl font-bold pb-6 text-left"
+            className={`text-4xl md:text-6xl font-semibold text-primary dark:text-base-content py-4 md:py-12 ${bitter.className}`}
           >
-            Contact
+            Get in Touch
           </motion.h3>
           <p className="invisible">
             Lorem ipsum dolor, <span className="hidden xs:inline">sit amet consectetur adipisicing elit. Eos alias deserunt</span>
@@ -197,6 +204,7 @@ const Contact = () => {
                     className=" no-resize appearance-none block w-full bg-slate-200 border border-gray-200 rounded py-3 px-4 pb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                     id="message"
                     name="message"
+                    placeholder='Enter your message here...'
                     value={message}
                     onChange={(e) => handleInputChange(e, "message")}
                     onBlur={() => handleBlur("message")}
@@ -217,5 +225,3 @@ const Contact = () => {
     </>
   );
 }
-
-export default Contact

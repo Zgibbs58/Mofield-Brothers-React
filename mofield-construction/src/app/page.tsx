@@ -10,7 +10,7 @@ import { Bitter } from "next/font/google";
 
 // const bigShoulders = Bebas_Neue({ weight: "400", subsets: ["latin"] });
 // const bigShoulders = Stick_No_Bills({subsets: ["latin"] });
-const bigShoulders = Bitter({subsets: ["latin"] });
+const bitter = Bitter({subsets: ["latin"] });
 
 
 export default function Home() {
@@ -18,12 +18,12 @@ export default function Home() {
   return (
     <main className="">
       <div className="hero h-100 relative bg-heroSm md:bg-heroLg">
-        <div className="hero-overlay bg-black bg-opacity-35"></div>
+        <div className="hero-overlay bg-black bg-opacity-50"></div>
         <div className={`hero-content text-center`}>
           <div className="md:max-w-2xl text-base-100">
-            <h1 className={`text-4xl dark:text-primary md:text-6xl font-bold ${bigShoulders.className}`}>Mofield Brothers</h1>
-            <p className={`pb-4 pt-1 dark:text-primary md:py-6 text-xl md:text-4xl font-semibold ${bigShoulders.className}`}>Family Owned & Operated Since 1961</p>
-            <button className="text-base-content bg-primary dark:bg-base-content dark:text-secondary hover:bg-yellow-600 btn-md md:btn-lg ease-in-out duration-300 rounded-md font-semibold text-2xl md:text-4xl">Contact Us</button>
+            <h1 className={`text-4xl text-primary dark:text-base-content md:text-6xl font-bold ${bitter.className}`}>Mofield Brothers</h1>
+            <p className={`text-primary dark:text-base-content text-xl md:text-4xl font-semibold pt-2 pb-6 md:pt-4 md:pb-8 ${bitter.className}`}>Family Owned & Operated Since 1961</p>
+            <Link href={"/contact"} className="text-base-content bg-primary dark:bg-base-content dark:text-secondary hover:bg-yellow-600 ease-in-out duration-300 rounded-md font-semibold py-2 text-2xl px-4 md:text-4xl">Contact Us</Link>
           </div>
         </div>
       </div>
@@ -38,18 +38,18 @@ export default function Home() {
           </div>
         </section>
         <section className='px-6 md:px-12 pb-24'>
-          <h3 className="text-5xl font-semibold text-center py-12">Services</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-6">
-            <ServiceCards img={"/waterSewerSm.jpg"} title={"Water and Sewer Lines"} text={"Overflowing with experience and craftsmanship, we deliver on quality and precision. From residential projects to large-scale utility endeavors, we're equipped to handle it all."} />
+          <h3 className="text-5xl font-semibold text-left py-12">Services</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-10 md:gap-6">
+            <ServiceCards img={"/waterSewerSm.jpg"} title={"Water & Sewer Lines"} text={"Overflowing with experience and craftsmanship, we deliver on quality and precision. From residential projects to large-scale utility endeavors, we're equipped to handle it all."} />
             <ServiceCards img={"/excavationSm.jpg"} title={"Excavation"} text={"Let us do what we do best, DIG! Our excavation services include land clearing, leveling, rock hammering, and brush clearing, all executed with precision and efficiency."} />
             <ServiceCards img={"/directionalDrillSm.jpg"} title={"Directional Drilling"} text={"We drill with precision and confidence! Our directional drilling services are perfect for projects of any size. We drill under driveways, highways, and rivers."} />
-            <ServiceCards img={"/truckSm.jpg"} title={"Dump Truck Hauling"} text={"From hauling in construction materials to removing debris, our reliable trucks and experienced drivers ensure efficient transportation for your project needs."} />
+            <ServiceCards img={"/truckSm.jpg"} title={"Truck Hauling"} text={"From hauling in construction materials to removing debris, our reliable trucks and experienced drivers ensure efficient transportation for your project needs."} />
           </div>
         </section>
         <section className="pb-20 px-6 md:px-12 text-center">
-          <h3 className="text-5xl font-semibold py-12">Gallery</h3>
+          <h3 className="text-5xl text-left font-semibold py-12">Gallery</h3>
           <Gallery photos={photos}/>
-          <Link className="btn btn-outline mt-6" href={"/gallery"}>View More</Link>
+          <Link className="btn btn-outline mt-6" href={"/projects"}>View More</Link>
         </section>
       
     </main>

@@ -8,7 +8,7 @@ module.exports = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         heroSm: 'url("/heroSm.jpg")',
         heroLg: 'url("/heroLg.jpg")',
-        backgroundLines: 'url("/roadsideLg.jpg")',
+        backgroundLines: 'url("/directionalDrillLg.jpg")',
       },
       height: {
         100: "40rem",

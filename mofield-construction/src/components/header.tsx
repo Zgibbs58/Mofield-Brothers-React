@@ -37,12 +37,12 @@ const Header = () => {
                 className="absolute w-full top-16 left-0 md:relative flex items-center justify-center gap-6 bg-base-100 shadow-md md:hidden"
               >
 
-                  <ul tabIndex={0} className="text-center flex flex-col gap-4 text-xl w-full py-4">
-                    <li className="" onClick={toggleMenu}><Link href="/">Home</Link></li>
-                    <li className="" onClick={toggleMenu}><Link href="/services">Services</Link></li>
-                    <li className="" onClick={toggleMenu}><Link href="/about">About</Link></li>
-                    <li className="" onClick={toggleMenu}><Link href="/gallery">Gallery</Link></li>
-                    <li className="" onClick={toggleMenu}><Link href="/contact">Contact</Link></li>
+                  <ul tabIndex={0} className="text-center flex flex-col text-xl w-full">
+                    <li className="border-y-2 border-base-content py-2" onClick={toggleMenu}><Link href="/">Home</Link></li>
+                    <li className="border-b-2 border-base-content py-2" onClick={toggleMenu}><Link href="/services">Services</Link></li>
+                    <li className="border-b-2 border-base-content py-2" onClick={toggleMenu}><Link href="/about">About</Link></li>
+                    <li className="border-b-2 border-base-content py-2" onClick={toggleMenu}><Link href="/projects">Projects</Link></li>
+                    <li className="border-b-2 border-base-content py-2" onClick={toggleMenu}><Link href="/contact">Contact</Link></li>
                   </ul>
                 </motion.div>
             )}
@@ -52,7 +52,7 @@ const Header = () => {
             <Link className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-base-content after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="/">Home</Link>
             <Link className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-base-content after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="/services">Services</Link>
             <Link className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-base-content after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="/about">About</Link>
-            <Link className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-base-content after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="/gallery">Gallery</Link>
+            <Link className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-base-content after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="/projects">Projects</Link>
             <Link className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-base-content after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" href="/contact">Contact</Link>
           </ul>
         </div>
