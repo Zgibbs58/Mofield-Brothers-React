@@ -11,7 +11,7 @@
   --success: #38a169;
   --warning: #dd6b20;
   --danger: #e53e3e; */
-  --logo-light: url("/mofieldLogo.png");
+  --logo-light: url("/images/mofieldLogo.png");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +24,7 @@
     --success: #38a169;
     --warning: #dd6b20;
     --danger: #e53e3e; */
-    --logo-dark: url("/mofieldLogoWhite.png");
+    --logo-dark: url("/images/mofieldLogoWhite.png");
   }
 }
 

@@ -6,9 +6,9 @@ module.exports = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        heroSm: 'url("/heroSm.jpg")',
-        heroLg: 'url("/heroLg.jpg")',
-        backgroundLines: 'url("/directionalDrillLg.jpg")',
+        heroSm: 'url("/images/heroSm.jpg")',
+        heroLg: 'url("/images/heroLg.jpg")',
+        backgroundLines: 'url("/images/directionalDrillLg.jpg")',
       },
       height: {
         100: "40rem",

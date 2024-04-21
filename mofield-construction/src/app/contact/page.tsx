@@ -4,17 +4,17 @@ import {useState, useEffect} from 'react'
 import { motion } from "framer-motion";
 import { validateEmail } from "../../../libs/utils";
 import { Bitter } from "next/font/google";
+import Image from "next/image";
 
 const bitter = Bitter({subsets: ["latin"] });
 
 export default function Contact() {
    const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
   const [errorMessage, setErrorMessage] = useState("");
-  const [modalFirstName, setModalFirstName] = useState("");
+  const [modalName, setModalName] = useState("");
 
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -39,10 +39,8 @@ export default function Contact() {
     // Based on the input type, we set the state of either email, firstName, lastName, and message.
     if (inputType === "email") {
       setEmail(inputValue);
-    } else if (inputType === "firstName") {
-      setFirstName(inputValue);
-    } else if (inputType === "lastName") {
-      setLastName(inputValue);
+    } else if (inputType === "name") {
+      setName(inputValue);
     } else {
       setMessage(inputValue);
     }
@@ -72,14 +70,13 @@ export default function Contact() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 
     event.preventDefault();
-    if (!firstName || !lastName || !email || !message) {
+    if (!name || !email || !message) {
       setErrorMessage("Please complete all required sections of the form.");
       return;
     }
 
-      const name = `${firstName} ${lastName}`;
+    const subject = "Mofield Contact Form";
 
-      const subject = "Mofield Contact Form";
     try {
       //next line for testing locally
       const response = await fetch("http://localhost:3000/api/contact", {
@@ -93,11 +90,10 @@ export default function Contact() {
       if (response.status === 200) {
         console.log("Email sent!. \nResponse:", response);
 
-        setModalFirstName(firstName);
+        setModalName(name);
 
         // If everything goes according to plan, we want to clear out the input after a successful registration.
-        setFirstName("");
-        setLastName("");
+        setName("");
         setEmail("");
         setMessage("");
 
@@ -122,64 +118,48 @@ export default function Contact() {
         <div className="hero-overlay bg-black bg-opacity-45"></div>
             <h3 className={`text-6xl font-semibold text-primary dark:text-base-content py-12 ${bitter.className}`}>Contact</h3>
         </div>
-        <div className="mx-8 mt-6 mb-24 sm:mx-20 lg:mx-32">
-          <motion.h3
+        <div className="mx-8 mt-6 mb-24 px-6 md:px-12">
+          {/* <motion.h3
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ ease: "easeOut", duration: 0.5 }}
             className={`text-4xl md:text-6xl font-semibold py-4 md:py-12 ${bitter.className}`}
           >
             Get in Touch
-          </motion.h3>
+          </motion.h3> */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ ease: "easeOut", duration: 0.5 }}
-            className="flex justify-start text-left"
+            className="flex justify-start text-left md:gap-8 lg:gap-16  py-12 md:py-24 flex-wrap md:flex-nowrap"
           >
-            <form className="w-full" onSubmit={handleSubmit}>
+            <div className='w-full md:w-1/2 flex flex-col text-left pb-4'>
+              <h4 className={`text-4xl md:text-6xl font-semibold py-4 ${bitter.className}`}>Get in Touch</h4>
+              <p className='text-md md:text-lg'>
+                We're here to help with your construction needs! Whether you have questions about our services or want to discuss a potential project, feel free to reach out. We're just a message away and look forward to speaking with you.
+              </p>
+            </div>
+            <form className="w-full md:w-1/2 " onSubmit={handleSubmit}>
               <p className="text-red-500 text-md font-semibold italic mb-4">{errorMessage}</p>
-              <div className="flex flex-wrap pb-6">
-                <div className="w-full md:w-1/2 md:pr-3 pb-6 md:pb-0">
-                  <label className="block uppercase tracking-wide text-md font-bold pb-2" htmlFor="grid-first-name">
-                    First Name
-                  </label>
+              <div className="flex flex-wrap pb-4">
+                <div className="w-full pb-2 md:pb-2">
                   <input
-                    className="appearance-none block w-full bg-slate-200 border border-gray-200 rounded py-3 px-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="firstName"
+                    className="block w-full border-gray-800 border-b rounded py-3 px-3 leading-tight focus:outline-none"
+                    id="name"
                     type="text"
-                    placeholder="Jane"
-                    name="firstName"
-                    value={firstName}
-                    onChange={(e) => handleInputChange(e, "firstName")}
-                    onBlur={() => handleBlur("firstName")}
+                    placeholder="Name"
+                    name="name"
+                    value={name}
+                    onChange={(e) => handleInputChange(e, "name")}
+                    onBlur={() => handleBlur("name")}
                   />
-                  <p id="firstNameError" className="text-red-500 text-xs italic"></p>
-                </div>
-                <div className="w-full md:w-1/2">
-                  <label className="block uppercase tracking-wide text-md font-bold pb-2" htmlFor="grid-last-name">
-                    Last Name
-                  </label>
-                  <input
-                    className="appearance-none block w-full bg-slate-200 border border-gray-200 rounded py-3 px-4 pb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="lastName"
-                    type="text"
-                    placeholder="Doe"
-                    name="lastName"
-                    value={lastName}
-                    onChange={(e) => handleInputChange(e, "lastName")}
-                    onBlur={() => handleBlur("lastName")}
-                  />
-                  <p id="lastNameError" className="text-red-500 text-xs italic"></p>
+                  <p id="nameError" className="text-red-500 text-xs italic"></p>
                 </div>
               </div>
-              <div className="flex flex-wrap pb-6">
+              <div className="flex flex-wrap pb-8">
                 <div className="w-full">
-                  <label className="block uppercase tracking-wide text-md font-bold pb-2" htmlFor="grid-password">
-                    E-mail
-                  </label>
                   <input
-                    className="appearance-none block w-full bg-slate-200 border border-gray-200 rounded py-3 px-4 pb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    className="block w-full border-gray-800 border-b rounded py-3 px-3 leading-tight focus:outline-none"
                     id="email"
                     placeholder="user@gmail.com"
                     type="email"
@@ -193,11 +173,11 @@ export default function Contact() {
               </div>
               <div className="flex flex-wrap">
                 <div className="w-full">
-                  <label className="block uppercase tracking-wide text-md font-bold pb-2" htmlFor="grid-password">
+                  <label className="block uppercase tracking-wide text-md pb-2" htmlFor="grid-password">
                     Message
                   </label>
                   <textarea
-                    className=" no-resize appearance-none block w-full bg-slate-200 border border-gray-200 rounded py-3 px-4 pb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                    className="no-resize appearance-none block w-full border border-gray-800 rounded py-3 px-4 pb-3 leading-tight h-48 resize-none focus:outline-none"
                     id="message"
                     name="message"
                     placeholder='Enter your message here...'
@@ -215,6 +195,7 @@ export default function Contact() {
                 Send
               </button>
             </form>
+            {/* <Image className="object-cover hidden lg:block" width={700} height={600} src={"/images/mike&RobertLg.jpg"} alt="Mofield brothers and dad"></Image> */}
           </motion.div>
         </div>
       </div>
