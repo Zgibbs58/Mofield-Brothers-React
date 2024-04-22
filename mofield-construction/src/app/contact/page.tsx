@@ -144,7 +144,7 @@ export default function Contact() {
               <div className="flex flex-wrap pb-4">
                 <div className="w-full pb-2 md:pb-2">
                   <input
-                    className="block w-full border-gray-800 border-b rounded py-3 px-3 leading-tight focus:outline-none"
+                    className="block w-full border-gray-800 border-b py-2 px-2 focus:outline-none"
                     id="name"
                     type="text"
                     placeholder="Name"
@@ -159,7 +159,7 @@ export default function Contact() {
               <div className="flex flex-wrap pb-8">
                 <div className="w-full">
                   <input
-                    className="block w-full border-gray-800 border-b rounded py-3 px-3 leading-tight focus:outline-none"
+                    className="block w-full border-gray-800 border-b py-2 px-2 focus:outline-none"
                     id="email"
                     placeholder="user@gmail.com"
                     type="email"
@@ -173,7 +173,7 @@ export default function Contact() {
               </div>
               <div className="flex flex-wrap">
                 <div className="w-full">
-                  <label className="block uppercase tracking-wide text-md pb-2" htmlFor="grid-password">
+                  <label className="block tracking-wide text-md pb-2" htmlFor="grid-password">
                     Message
                   </label>
                   <textarea

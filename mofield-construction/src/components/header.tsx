@@ -37,12 +37,12 @@ const Header = () => {
                 className="absolute w-full top-16 left-0 md:relative flex items-center justify-center gap-6 bg-base-100 shadow-md md:hidden"
               >
 
-                  <ul tabIndex={0} className="text-center flex flex-col text-xl w-full">
-                    <li className="border-y-2 border-base-content py-2" onClick={toggleMenu}><Link href="/">Home</Link></li>
-                    <li className="border-b-2 border-base-content py-2" onClick={toggleMenu}><Link href="/services">Services</Link></li>
-                    <li className="border-b-2 border-base-content py-2" onClick={toggleMenu}><Link href="/about">About</Link></li>
-                    <li className="border-b-2 border-base-content py-2" onClick={toggleMenu}><Link href="/projects">Projects</Link></li>
-                    <li className="border-b-2 border-base-content py-2" onClick={toggleMenu}><Link href="/contact">Contact</Link></li>
+                  <ul tabIndex={0} className="text-left flex flex-col text-xl w-full pl-10 py-6 font-semibold">
+                    <li className="py-2" onClick={toggleMenu}><Link href="/">Home</Link></li>
+                    <li className="py-2" onClick={toggleMenu}><Link href="/services">Services</Link></li>
+                    <li className="py-2" onClick={toggleMenu}><Link href="/about">About</Link></li>
+                    <li className="py-2" onClick={toggleMenu}><Link href="/projects">Projects</Link></li>
+                    <li className="py-2" onClick={toggleMenu}><Link href="/contact">Contact</Link></li>
                   </ul>
                 </motion.div>
             )}

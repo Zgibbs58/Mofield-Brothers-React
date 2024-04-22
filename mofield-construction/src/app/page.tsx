@@ -43,13 +43,13 @@ export default function Home() {
             <ServiceCards img={"/images/waterSewerSm.jpg"} title={"Water & Sewer Lines"} text={"Overflowing with experience and craftsmanship, we deliver on quality and precision. From residential projects to large-scale utility endeavors, we're equipped to handle it all."} />
             <ServiceCards img={"/images/excavationSm.jpg"} title={"Excavation"} text={"Let us do what we do best, DIG! Our excavation services include land clearing, leveling, rock hammering, and brush clearing, all executed with precision and efficiency."} />
             <ServiceCards img={"/images/directionalDrillSm.jpg"} title={"Directional Drilling"} text={"We drill with precision and confidence! Our directional drilling services are perfect for projects of any size. We drill under driveways, highways, and rivers."} />
-            <ServiceCards img={"/images/truckSm.jpg"} title={"Truck Hauling"} text={"From hauling in construction materials to removing debris, our reliable trucks and experienced drivers ensure efficient transportation for your project needs."} />
+            <ServiceCards img={"/images/truckSm.jpg"} title={"Hauling"} text={"From hauling in construction materials to removing debris, our reliable trucks and experienced drivers ensure efficient transportation for your project needs."} />
           </div>
         </section>
         <section className="pb-20 px-6 md:px-12 text-center">
-          <h3 className="text-5xl text-left font-semibold py-12">Gallery</h3>
+          <h3 className="text-5xl text-left font-semibold py-12">Projects</h3>
           <Gallery photos={photos}/>
-          <Link className="btn btn-outline mt-6" href={"/projects"}>View More</Link>
+          <Link className="btn btn-outline mt-6" href={"/projects"}>Project Gallery</Link>
         </section>
       
     </main>

@@ -11,7 +11,7 @@ export default function about() {
         <div className="hero-overlay bg-black bg-opacity-45"></div>
             <h3 className={`text-6xl font-semibold text-primary dark:text-base-content py-12 ${bitter.className}`}>About</h3>
     </div>
-    <section className="flex flex-row flex-wrap 2xl:flex-nowrap justify-center items-start gap-6 xl:gap-12 py-48 px-6 md:px-12">
+    <section className="flex flex-row flex-wrap 2xl:flex-nowrap justify-center items-start gap-6 xl:gap-12 py-16 md:py-48 px-6 md:px-12">
           <Image className="object-cover" width={600} height={600} src={"/images/aboutimage.jpg"} alt="Mofield brothers and dad"></Image>
           <div className="flex flex-col">
             <h2 className="text-5xl font-semibold pb-6">Mofield Brothers Construction</h2>

@@ -45,6 +45,12 @@ body {
   .logo {
     background-image: var(--logo-dark);
   }
+  .icon-svg path {
+    fill: #ffffff;
+  }
+  .icon-svg circle {
+    fill: #ffffff;
+  }
 }
 
 /* React photo album style for hovering images */
