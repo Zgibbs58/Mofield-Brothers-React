@@ -4,12 +4,9 @@ import ServiceCards from "@/components/ServiceCards";
 import Image from "next/image";
 import Gallery from "@/components/Gallery";
 import photos from "@/components/homePhotos";
-// import { Bebas_Neue } from "next/font/google";
-// import { Stick_No_Bills } from "next/font/google";
+import ContactForm from "@/components/ContactForm";
 import { Bitter } from "next/font/google";
 
-// const bigShoulders = Bebas_Neue({ weight: "400", subsets: ["latin"] });
-// const bigShoulders = Stick_No_Bills({subsets: ["latin"] });
 const bitter = Bitter({subsets: ["latin"] });
 
 
@@ -18,7 +15,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="hero h-100 relative bg-heroSm md:bg-heroLg">
-        <div className="hero-overlay bg-black bg-opacity-50"></div>
+        <div className="hero-overlay bg-black bg-opacity-35 dark:bg-opacity-50"></div>
         <div className={`hero-content text-center`}>
           <div className="md:max-w-2xl text-base-100">
             <h1 className={`text-4xl text-primary dark:text-base-content md:text-6xl font-bold ${bitter.className}`}>Mofield Brothers</h1>
@@ -27,7 +24,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-        <section className="flex flex-row flex-wrap 2xl:flex-nowrap justify-center items-start gap-6 xl:gap-12 py-48 px-6 md:px-12">
+        <section className="flex flex-row flex-wrap 2xl:flex-nowrap justify-center items-start gap-6 xl:gap-12 py-20 md:py-48 px-6 md:px-12">
           <Image className="object-cover" width={600} height={600} src={"/images/aboutimage.jpg"} alt="Mofield brothers and dad"></Image>
           <div className="flex flex-col">
             <h2 className="text-5xl font-semibold pb-6">Mofield Brothers Construction</h2>
@@ -37,8 +34,8 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className='px-6 md:px-12 pb-24'>
-          <h3 className="text-5xl font-semibold text-left py-12">Services</h3>
+        <section className='py-12 md:py-24 px-6 md:px-12 pb-24'>
+          <h3 className={`text-5xl font-semibold text-left py-12 ${bitter.className}`}>Services</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-10 md:gap-6">
             <ServiceCards img={"/images/waterSewerSm.jpg"} title={"Water & Sewer Lines"} text={"Overflowing with experience and craftsmanship, we deliver on quality and precision. From residential projects to large-scale utility endeavors, we're equipped to handle it all."} />
             <ServiceCards img={"/images/excavationSm.jpg"} title={"Excavation"} text={"Let us do what we do best, DIG! Our excavation services include land clearing, leveling, rock hammering, and brush clearing, all executed with precision and efficiency."} />
@@ -46,10 +43,23 @@ export default function Home() {
             <ServiceCards img={"/images/truckSm.jpg"} title={"Hauling"} text={"From hauling in construction materials to removing debris, our reliable trucks and experienced drivers ensure efficient transportation for your project needs."} />
           </div>
         </section>
-        <section className="pb-20 px-6 md:px-12 text-center">
-          <h3 className="text-5xl text-left font-semibold py-12">Projects</h3>
+        <section className={`py-12 md:py-24 px-6 md:px-12 text-center`}>
+          <h3 className={`text-5xl text-left font-semibold py-12 ${bitter.className}`}>Projects</h3>
           <Gallery photos={photos}/>
           <Link className="btn btn-outline mt-6" href={"/projects"}>Project Gallery</Link>
+        </section>
+        <section className="flex py-12 md:py-24 px-6 md:px-12">
+          <div
+            className="flex justify-start text-left md:gap-8 lg:gap-16  py-12 md:py-24 flex-wrap md:flex-nowrap"
+          >
+            <div className='w-full md:w-1/2 flex flex-col text-left pb-4'>
+              <h4 className={`text-4xl md:text-5xl font-semibold py-4 ${bitter.className}`}>Get in Touch</h4>
+              <p className='text-md md:text-lg'>
+                We're here to help with your construction needs! Whether you have questions about our services or want to discuss a potential project, feel free to reach out. We're just a message away and look forward to speaking with you.
+              </p>
+            </div>
+           <ContactForm />
+          </div>
         </section>
       
     </main>

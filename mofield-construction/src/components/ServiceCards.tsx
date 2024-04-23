@@ -3,14 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-
-type ServiceCardsProps = {
-  img: string;
-  title: string;
-  text: string;
-};
-
-const ServiceCards: React.FC<ServiceCardsProps> = ({img, title, text}) => {
+const ServiceCards = ({img, title, text}: {img: string, title: string, text: string}) => {
   return (
     <div className="card card-compact bg-base-200 w-full h-full shadow-xl">
             <figure><Image width={700} height={200} src={img} alt={title}></Image></figure>
