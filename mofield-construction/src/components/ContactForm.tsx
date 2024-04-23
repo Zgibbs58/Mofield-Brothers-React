@@ -50,14 +50,14 @@ const Contact = () => {
 
     if (!(document.getElementById(`${inputName}`) as HTMLInputElement)?.value) {
       document.getElementById(`${inputName}Error`)!.textContent = "This is a required field.";
-    } else {
+    } else if ((document.getElementById(`${inputName}`) as HTMLInputElement)?.value && inputName !== "email") {
       document.getElementById(`${inputName}Error`)!.textContent = "";
-    }
-    if (!email) {
-      document.getElementById(`emailError`)!.textContent = "This is a required field.";
     } else if (!validateEmail(email)) {
       document.getElementById(`emailError`)!.textContent = "Please enter a valid email.";
+    } else if (validateEmail(email)) {
+      document.getElementById(`emailError`)!.textContent = "";
     }
+    
   };
 
   //   Checking everytime the cursor leaves the input to see if it is empty and displaying a required message if so
@@ -76,7 +76,7 @@ const Contact = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 
     event.preventDefault();
-    if (!name || !email || !message) {
+    if (!name || !email || !message || !validateEmail(email)) {
       setErrorMessage("Please complete all required sections of the form.");
       return;
     }
@@ -130,6 +130,7 @@ const Contact = () => {
                     type="text"
                     placeholder="Name"
                     name="name"
+                    autoComplete='name'
                     value={name}
                     onChange={(e) => handleInputChange(e, "name")}
                     onBlur={() => handleBlur("name")}
@@ -146,6 +147,7 @@ const Contact = () => {
                     type="email"
                     value={email}
                     name="email"
+                    autoComplete='email'
                     onChange={(e) => handleInputChange(e, "email")}
                     onBlur={()=>handleBlur("email")}
                   />
@@ -154,7 +156,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-wrap">
                 <div className="w-full">
-                  <label className="block tracking-wide text-md pb-2" htmlFor="grid-password">
+                  <label className="block tracking-wide text-md pb-2" htmlFor="message">
                     Message
                   </label>
                   <textarea

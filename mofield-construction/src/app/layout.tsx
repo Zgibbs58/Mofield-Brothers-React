@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { Heebo } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const rokkitt = Heebo({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mofield Brothers Construction Company, trusted Tennessee contractors",
-  description: "Mofield Brothers Construction Site showing expertise in Water and Sewer lines, excavation, and directional drilling.",
+  description: "Mofield Brothers Construction expertise in Water and Sewer lines, excavation, and directional drilling.",
 };
 
 export default function RootLayout({
@@ -17,9 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="mytheme" lang="en">
+      <head>
+        <link rel="icon" href="/images/favicon.png" />
+      </head>
       <body className={rokkitt.className}>
         <Header />
-        {children}</body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

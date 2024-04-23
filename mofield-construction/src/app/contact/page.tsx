@@ -7,7 +7,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="overflow-x-hidden">
+      <main className="overflow-x-hidden">
         <div className="hero h-50 md:h-60 relative bg-heroLg bg-center">
         <div className="hero-overlay bg-black bg-opacity-45"></div>
             <h3 className={`text-6xl font-semibold text-primary dark:text-base-content py-12 ${bitter.className}`}>Contact</h3>
@@ -33,7 +33,7 @@ export default function Contact() {
            <ContactForm />
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }
