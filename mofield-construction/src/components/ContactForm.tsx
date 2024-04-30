@@ -68,6 +68,8 @@ const Contact = () => {
       document.getElementById(`${inputName}Error`)!.textContent = "";
     } else if (!validateEmail(email)) {
       document.getElementById(`emailError`)!.textContent = "Please enter a valid email.";
+    } else if (validateEmail(email)) {
+      document.getElementById(`emailError`)!.textContent = "";
     }
   };
 
@@ -85,9 +87,9 @@ const Contact = () => {
 
     try {
       //next line for testing locally
-      const response = await fetch("http://localhost:3000/api/contact", {
+      // const response = await fetch("http://localhost:3000/api/contact", {
       //next line for production
-      // const response = await fetch("https://zacharywgibbs.com/api/sendmail", {
+      const response = await fetch("https://mofield-brothers-react-7hs9ztu2s-zgibbs58s-projects.vercel.app/api/sendmail", {
         method: "POST",
         // headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, subject, message }),
