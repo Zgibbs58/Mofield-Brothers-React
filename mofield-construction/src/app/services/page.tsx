@@ -9,7 +9,7 @@ export default function Services() {
   return (
     <main>
         <div className="hero h-50 md:h-60 relative bg-heroLg bg-center">
-        <div className="hero-overlay bg-black bg-opacity-45"></div>
+        <div className="hero-overlay bg-black bg-opacity-40"></div>
             <h3 className={`text-6xl font-semibold text-primary dark:text-base-content py-12 ${bitter.className}`}>Services</h3>
         </div>
         <section>
@@ -18,7 +18,7 @@ export default function Services() {
             <p className={`text-4xl md:text-5xl font-semibold ${bitter.className}`}>Built on Trust</p>
             <p className='pt-4'>Mofield Construction brings decades of experience to every project. From water and sewer installations to precision excavation, directional drilling, and efficient dump truck hauling, we deliver unmatched service with reliability and precision. Let's work together to build a strong foundation for your next project.</p>
           </div>
-          <div className="grid md:grid-cols-2 pb-48">
+          <div className="grid md:grid-cols-2 pb-12 md:pb-48">
             <ServiceGridItem tags={["infrastructure projects", "pipeline installation", "residential", "commercial"]} lightColor='bg-primary' darkColor='dark:bg-green-300' title="Water & Sewer" icon={"/images/pipeIcon.svg"} text="Water and sewer lines are at the heart of Mofield Brothers Construction Company's expertise and experience. With a robust portfolio that spans residential projects to large-scale utility undertakings, we have established ourselves as professionals in the industry. Our team possesses the knowledge, skills, and resources necessary to handle a wide range of water and sewer line installations. Whether it's laying down pipelines for individual homes or managing complex infrastructure projects, we approach each job with meticulous attention to detail and a commitment to quality." />
             <ServiceGridItem tags={["land clearing", "site preparation"]} lightColor='bg-green-300' darkColor='dark:bg-base-content' title="Excavation" icon={"/images/excavatorIcon.svg"} text="At Mofield Brothers Construction Company, excavation is at the core of our expertise. With state-of-the-art equipment and skilled operators, we undertake a wide range of excavation projects with precision and efficiency. From land clearing and leveling to rock hammering and brush clearing, we have the capabilities to handle diverse excavation tasks. Whether it's preparing sites for construction, creating drainage solutions, or excavating for utilities, our team's extensive experience ensures high-quality results that meet and exceed our clients' expectations." />
             <ServiceGridItem tags={["underground utilities", "precision drilling"]} lightColor='bg-neutral-content' title="Directional Drilling" icon={"/images/drillIcon.svg"} text="Mofield Brothers Construction Company offers expert directional drilling services tailored to meet diverse project requirements. With cutting-edge technology and experienced operators, we excel in drilling under various obstacles, including driveways, highways, rivers, and more. Our directional drilling solutions are ideal for projects of all sizes, providing efficient and precise results while minimizing disruption to the surrounding environment. Whether it's laying utility lines, installing pipelines, or completing underground installations, our team has the expertise and equipment to get the job done safely and effectively." />

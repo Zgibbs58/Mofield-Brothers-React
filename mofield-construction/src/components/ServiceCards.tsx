@@ -21,7 +21,7 @@ const ServiceCards = ({img, title, text}: {img: string, title: string, text: str
               </h2>
               <p>{text}</p>
               <div className="card-actions justify-start">
-                <Link href={'/services'} className="btn btn-outline btn-base-content hover:btn-active ease-in-out duration-300">Learn More</Link>
+                <Link href={'/services'} className="btn btn-outline btn-base-content hover:btn-active ease-in-out duration-300">Services &#x2192;</Link>
             </div>
             </div>
     </ motion.div>

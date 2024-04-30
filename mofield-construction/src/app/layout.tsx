@@ -19,12 +19,12 @@ export default function RootLayout({
   return (
     <html data-theme="mytheme" lang="en">
       <head>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/mLogoBlack.png" />
       </head>
       <body className={rokkitt.className}>
-        <Header />
-        {children}
-        <Footer />
+          <Header />
+            {children}
+          <Footer />
       </body>
     </html>
   );

@@ -1,45 +1,23 @@
-import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import NavLinks from "./NavLinks";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center text-center p-4 bg-black dark:bg-base-200 text-gray-200 gap-2">
-      <nav className="grid-flow-col">
-        <ul className="menu menu-horizontal gap-4 sm:gap-6 px-1">
-          <Link
-            className="relative md:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gray-200 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-            href="/"
-          >
-            Home
-          </Link>
-          <Link
-            className="relative md:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gray-200 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-            href="/services"
-          >
-            Services
-          </Link>
-          <Link
-            className="relative md:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gray-200 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-            href="/about"
-          >
-            About
-          </Link>
-          <Link
-            className="relative md:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gray-200 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-            href="/projects"
-          >
-            Projects
-          </Link>
-          <Link
-            className="relative md:text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gray-200 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-            href="/contact"
-          >
-            Contact
-          </Link>
-        </ul>
-      </nav>
-      <aside className="flex flex-col items-center">
-        <p className="text-xs md:text-sm">© 2024 Mofield Brothers Contruction Co., LLC. All rights reserved.</p>
+    <footer className="flex flex-col py-4 px-4 md:px-10 bg-black dark:bg-base-200 text-gray-200 gap-3">
+      <div className="grid md:grid-cols-2 items-center">
+        <div className="hidden md:flex justify-start">
+          <Image className="hidden md:block" src="/images/mofieldLogoWhite.png" alt="Mofield Brothers Contruction Logo" width={300} height={100} />
+        </div>
+        <nav className="grid grid-flow-col md:grid-cols-auto gap-x-3 lg:gap-x-6 justify-center md:justify-end">
+          <NavLinks />
+        </nav>
+      </div>
+      <div className="md:hidden flex justify-center">
+        <Image src="/images/mofieldLogoWhite.png" alt="Mofield Brothers Contruction Logo" width={200} height={100} />
+      </div>
+      <aside className="flex flex-col justify-center text-center items-center">
+        <p className="text-xs md:text-sm">© {new Date().getFullYear()} Mofield Brothers Contruction Co., LLC. All rights reserved.</p>
         <p className="text-xs md:text-sm">
           Website crafted by{" "}
           <a className="text-yellow-300" href="https://www.zacharywgibbs.com/">

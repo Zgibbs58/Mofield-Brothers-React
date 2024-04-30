@@ -8,7 +8,7 @@ export default function about() {
   return (
     <main>
     <div className="hero h-50 md:h-60 relative bg-heroLg bg-center">
-        <div className="hero-overlay bg-black bg-opacity-45"></div>
+        <div className="hero-overlay bg-black bg-opacity-40"></div>
             <h3 className={`text-6xl font-semibold text-primary dark:text-base-content py-12 ${bitter.className}`}>About</h3>
     </div>
     <section className="flex flex-row flex-wrap 2xl:flex-nowrap justify-center items-start gap-6 xl:gap-12 py-16 md:py-48 px-6 md:px-12">
