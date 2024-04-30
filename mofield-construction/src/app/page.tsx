@@ -1,10 +1,10 @@
 
 import Link from "next/link";
-import ServiceCards from "@/components/ServiceCards";
+import ServiceCards from "../components/ServiceCards";
 import Image from "next/image";
-import Gallery from "@/components/Gallery";
-import photos from "@/components/homePhotos";
-import ContactForm from "@/components/ContactForm";
+import Gallery from "../components/Gallery";
+import photos from "../components/homePhotos";
+import ContactForm from "../components/ContactForm";
 import { Bitter } from "next/font/google";
 
 const bitter = Bitter({subsets: ["latin"] });

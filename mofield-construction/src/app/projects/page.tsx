@@ -1,8 +1,7 @@
 import React from 'react'
 import Gallery from '../../components/Gallery'
-import photos from '../../components/galleryPhotos'
+import photos from '../../components/galleryPhotos.js';
 import { Bitter } from "next/font/google";
-import Image from 'next/image';
 
 const bitter = Bitter({subsets: ["latin"] });
 
