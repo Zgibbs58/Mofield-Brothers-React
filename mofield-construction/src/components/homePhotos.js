@@ -26,14 +26,14 @@ const homePhotos = [
     largeSrc: "/images/trenchWaterLg.jpg",
   },
   {
-    src: "/images/twoWaterLineSm.jpg",
+    src: "/images/twoWaterlineSm.jpg",
     width: 200,
     height: 200,
     srcSet: [
-      { src: "/images/twoWaterLineSm.jpg", width: 200, height: 200 },
-      { src: "/images/twoWaterLineSm.jpg", width: 100, height: 100 },
+      { src: "/images/twoWaterlineSm.jpg", width: 200, height: 200 },
+      { src: "/images/twoWaterlineSm.jpg", width: 100, height: 100 },
     ],
-    largeSrc: "/images/twoWaterLineLg.jpg",
+    largeSrc: "/images/twoWaterlineLg.jpg",
   },
   {
     src: "/images/loadedDrillLg.jpg",

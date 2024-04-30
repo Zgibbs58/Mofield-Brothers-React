@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </div>
         <section className="flex flex-row flex-wrap 2xl:flex-nowrap justify-center items-start gap-6 xl:gap-12 pt-24 md:pt-48 px-6 md:px-12">
-          <Image className="object-cover" width={600} height={600} src={"/images/aboutimage.jpg"} alt="Mofield brothers and dad"></Image>
+          <Image className="object-cover" width={600} height={600} src={"/images/aboutImage.jpg"} alt="Mofield brothers and dad"></Image>
           <div className="flex flex-col">
             <h2 className="text-4xl md:text-6xl font-semibold pb-6">Mofield Brothers Construction</h2>
             <p className="pb-6">Mofield Brothers Construction Company has a rich history spanning over six decades, rooted in the expertise and dedication of its founders, John and Marvin Trigger Mofield. Established in 1961, the company has evolved under the leadership of John's son, Mike Mofield, who now leads the business alongside his sons, Martin and Judson Mofield. With a combined experience of over 75 years in the construction industry, Mofield Brothers is renowned for its reliability and excellence in the Middle Tennessee area. 
