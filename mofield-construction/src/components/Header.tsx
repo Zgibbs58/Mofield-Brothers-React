@@ -39,7 +39,7 @@ const Header = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 300 }}
                 transition={{ duration: 0.3 }}
-                className="absolute w-full top-16 left-0 md:relative flex items-center justify-center gap-6 bg-black dark:bg-base-200 text-gray-200 shadow-md md:hidden"
+                className="fixed w-full top-16 left-0 flex items-center justify-center gap-6 bg-black dark:bg-base-200 text-gray-200 shadow-md shadow-black md:hidden rounded-b-lg"
               >
 
                   <ul tabIndex={0} className="text-left flex flex-col text-xl w-full pl-10 py-2 font-semibold">
