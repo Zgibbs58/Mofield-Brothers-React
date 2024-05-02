@@ -12,7 +12,7 @@ export default function Pojects() {
         <div className="hero-overlay bg-black bg-opacity-40"></div>
             <h3 className={`text-6xl font-semibold text-primary dark:text-base-content py-12 ${bitter.className}`}>Projects</h3>
       </div>
-    <section className="px-6 md:px-12 py-24">
+    <section className="px-6 md:px-24 py-24">
       <Gallery photos={photos}/>
     </section>
     </main>

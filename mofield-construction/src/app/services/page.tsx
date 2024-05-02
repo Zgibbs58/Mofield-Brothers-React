@@ -13,7 +13,7 @@ export default function Services() {
             <h3 className={`text-6xl font-semibold text-primary dark:text-base-content py-12 ${bitter.className}`}>Services</h3>
         </div>
         <section>
-          <div className="flex flex-col justify-center py-24 md:py-32 lg:w-1/2 gap-2 px-6 md:px-12">
+          <div className="flex flex-col justify-center py-24 md:py-32 xl:w-1/2 gap-2 px-6 md:px-24">
             <h4 className={`text-4xl md:text-5xl font-semibold ${bitter.className}`}>Expert Services:</h4>
             <p className={`text-4xl md:text-5xl font-semibold ${bitter.className}`}>Built on Trust</p>
             <p className='pt-4'>Mofield Construction brings decades of experience to every project. From water and sewer installations to precision excavation, directional drilling, and efficient dump truck hauling, we deliver unmatched service with reliability and precision. Let's work together to build a strong foundation for your next project.</p>

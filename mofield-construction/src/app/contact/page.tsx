@@ -12,7 +12,7 @@ export default function Contact() {
         <div className="hero-overlay bg-black bg-opacity-40"></div>
             <h3 className={`text-6xl font-semibold text-primary dark:text-base-content py-12 ${bitter.className}`}>Contact</h3>
         </div>
-        <div className="mb-24 px-6 md:px-12">
+        <div className="mb-24 px-6 md:px-24">
           {/* <motion.h3
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
