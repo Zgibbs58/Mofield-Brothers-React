@@ -43,7 +43,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="md:hidden z-30">
-          <button tabIndex={0} role="button" className="btn btn-ghost btn-circle text-white" onClick={toggleMenu} aria-label='Menu'>
+          <button tabIndex={0} role="button" className="btn btn-ghost btn-circle text-white focus:outline-none active:bg-transparent" onClick={toggleMenu} aria-label='Menu'>
             {isOpen ? (<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-9 h-9 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 6l12 12M18 6L6 18"/></svg>)
               : (<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-9 h-9 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>)}
           </button>
