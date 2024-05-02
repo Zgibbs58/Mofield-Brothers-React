@@ -8,9 +8,9 @@ export default function Contact() {
   return (
     <>
       <main className="overflow-x-hidden">
-        <div className="hero h-50 md:h-60 relative bg-heroLg bg-center">
-        <div className="hero-overlay bg-black bg-opacity-40"></div>
-            <h3 className={`text-6xl font-semibold text-primary dark:text-base-content py-12 ${bitter.className}`}>Contact</h3>
+        <div className="hero h-40 md:h-64 relative bg-heroLg bg-center">
+        <div className="bg-yellow-800 bg-opacity-30 h-full w-full bg-gradient-to-br from-yellow-950"></div>
+            <h3 className={`text-4xl md:text-6xl font-semibold text-white py-12 ${bitter.className}`}>Contact</h3>
         </div>
         <div className="mb-24 px-6 md:px-24">
           {/* <motion.h3

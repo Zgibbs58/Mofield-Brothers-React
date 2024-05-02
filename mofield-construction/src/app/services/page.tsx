@@ -8,9 +8,9 @@ const bitter = Bitter({subsets: ["latin"] });
 export default function Services() {
   return (
     <main>
-        <div className="hero h-50 md:h-60 relative bg-heroLg bg-center">
-        <div className="hero-overlay bg-black bg-opacity-40"></div>
-            <h3 className={`text-6xl font-semibold text-primary dark:text-base-content py-12 ${bitter.className}`}>Services</h3>
+        <div className="hero h-40 md:h-64 relative bg-heroLg bg-center">
+        <div className="bg-yellow-800 bg-opacity-30 h-full w-full bg-gradient-to-br from-yellow-950"></div>
+            <h3 className={`text-4xl md:text-6xl font-semibold text-white py-12 ${bitter.className}`}>Services</h3>
         </div>
         <section>
           <div className="flex flex-col justify-center py-24 md:py-32 xl:w-1/2 gap-2 px-6 md:px-24">

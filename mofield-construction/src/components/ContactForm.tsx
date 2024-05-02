@@ -174,7 +174,7 @@ const Contact = () => {
                 </div>
               </div>
               <button
-                className="btn btn-warning w-full my-6 py-2 text-xl font-bold rounded-full ease-in-out duration-300"
+                className="btn btn-warning hover:bg-yellow-600 w-full my-6 py-2 text-xl font-bold rounded-full ease-in-out duration-300"
                 type="submit"
               >
                 Send
