@@ -4,7 +4,7 @@ import NavLinks from "./NavLinks";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col py-4 px-6 md:px-24 bg-gray-500 dark:bg-base-200 text-gray-200 gap-3">
+    <footer className="flex flex-col py-4 px-6 md:px-24 bg-yellow-950 dark:bg-base-200 text-gray-200 gap-3">
       <div className="grid md:grid-cols-2 items-center">
         <div className="hidden md:flex justify-start">
           <Image className="hidden md:block" src="/images/mofieldLogoWhite.png" alt="Mofield Brothers Contruction Logo" width={300} height={100} />

@@ -16,7 +16,7 @@ export default function Home() {
     <main className="">
       <div className="hero items-center h-100 bg-heroSm md:bg-heroLg">
       {/* <div className="grid grid-o h-100 bg-heroSm md:bg-heroLg"> */}
-        <div className="bg-yellow-800 bg-opacity-30 h-full w-full bg-gradient-to-br from-yellow-950"></div>
+        <div className="bg-yellow-800 bg-opacity-30 h-full w-full bg-gradient-to-br from-yellow-950 dark:from-stone-800 dark:bg-stone-900 dark:bg-opacity-40"></div>
         <div className={`text-left flex justify-start w-full pl-6 md:pl-24`}>
           <div className="text-base-100">
             <h1 className={`text-4xl text-white md:text-6xl font-bold pb-2 ${bitter.className}`}>Mofield Bros Construction</h1>
@@ -30,7 +30,7 @@ export default function Home() {
           <Image className="object-cover" width={600} height={600} src={"/images/aboutImage.jpg"} alt="Mofield brothers and dad"></Image>
           <div className="flex flex-col">
             <h2 className="text-4xl md:text-6xl font-semibold pb-6">Mofield Brothers Construction</h2>
-            <p className="">Mofield Brothers Construction Company has a rich history spanning over six decades, rooted in the expertise and dedication of its founders, John and Marvin Trigger Mofield. Established in 1961, the company has evolved under the leadership of John's son, Mike Mofield, who now leads the business alongside his sons, Martin and Judson Mofield. With a combined experience of over 75 years in the construction industry, Mofield Brothers is renowned for its reliability and excellence in the Middle Tennessee area. 
+            <p className="">Mofield Brothers Construction Company has a rich history spanning over six decades, rooted in the expertise and dedication of its founders, John and Marvin Trigger Mofield. Established in 1961, the company has evolved under the leadership of John's son, Mike Mofield, who now leads the business alongside his sons, Martin and Judson Mofield. With a combined experience of over 75 years in the construction industry, Mofield Brothers is known for its reliability and excellence in the Middle Tennessee area. 
               <br /><br />The Mofield family's deep connection to the land is evident, with three generations of farming experience shaping their work ethic and commitment to quality. From humble beginnings as laborers and farmers to becoming accomplished machine operators and respected business leaders, the Mofields bring a wealth of knowledge and passion to every project they undertake.
               <br /><br />With their extensive background and expertise, Mofield Brothers Construction Company is well-equipped to tackle a wide range of construction projects, delivering superior results and exceeding client expectations. Whether it's residential, commercial, or agricultural construction, you can trust Mofield Brothers to bring dedication, skill, and integrity to every job.
             </p>
