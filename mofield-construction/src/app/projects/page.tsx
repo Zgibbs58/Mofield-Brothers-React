@@ -7,7 +7,7 @@ const bitter = Bitter({subsets: ["latin"] });
 
 export default function Pojects() {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       <div className="hero h-40 md:h-64 relative bg-heroLg bg-center">
         <div className="bg-yellow-800 bg-opacity-30 h-full w-full bg-gradient-to-br from-yellow-950 dark:from-stone-800 dark:bg-stone-900 dark:bg-opacity-40"></div>
             <h3 className={`text-4xl md:text-6xl font-semibold text-white py-12 ${bitter.className}`}>Projects</h3>

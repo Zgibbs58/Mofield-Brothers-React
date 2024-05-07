@@ -11,7 +11,7 @@ const bitter = Bitter({subsets: ["latin"] });
 
 const Contact = () => {
 
-     const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
@@ -122,7 +122,10 @@ const Contact = () => {
         <p className="text-2xl sm:text-3xl font-bold mb-4">Thanks, {modalName}!</p>
         <p className="sm:text-lg">We&apos;ll review your message and get back to you as soon as possible.</p>{" "}
       </ContactModal>
-    <form className="w-full md:w-1/2 " onSubmit={handleSubmit}>
+    <motion.form initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.4 }} className="w-full md:w-1/2 " onSubmit={handleSubmit}>
               <p className="text-red-500 text-md font-semibold italic mb-4">{errorMessage}</p>
               <div className="flex flex-wrap pb-4">
                 <div className="w-full pb-2 md:pb-2">
@@ -174,12 +177,12 @@ const Contact = () => {
                 </div>
               </div>
               <button
-                className="btn btn-warning hover:bg-yellow-600 w-full my-6 py-2 text-xl font-bold rounded-full ease-in-out duration-300"
+                className="text-base-content bg-primary dark:bg-base-content dark:text-secondary hover:bg-yellow-600 w-full my-6 py-2 text-xl font-bold rounded-full ease-in-out duration-300"
                 type="submit"
               >
                 Send
               </button>
-            </form>
+            </motion.form>
     </>
   )
 }

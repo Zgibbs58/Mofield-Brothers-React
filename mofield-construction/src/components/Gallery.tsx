@@ -5,13 +5,18 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import { motion } from "framer-motion";
 
 const Gallery = ({photos}: {photos: any[]}) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <>
+    <motion.div
+    initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.4 }}>
       <PhotoAlbum
         photos={photos}
         sizes={{
@@ -41,7 +46,7 @@ const Gallery = ({photos}: {photos: any[]}) => {
           height: 900,
         }))}
       />
-    </>
+    </motion.div>
   );
 };
 

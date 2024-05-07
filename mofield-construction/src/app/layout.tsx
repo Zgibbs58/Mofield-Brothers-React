@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/images/mLogoBlack.png" />
       </head>
-      <body className={rokkitt.className}>
+      <body className={`overflow-x-hidden ${rokkitt.className}`}>
           <Header />
             {children}
           <Footer />

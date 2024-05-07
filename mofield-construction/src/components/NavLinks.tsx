@@ -3,6 +3,12 @@ import React from 'react'
 import Link from 'next/link'
 import { usePathname } from "next/navigation";
 
+<style jsx>{`
+  .link:hover::after, .link.active::after {
+    transform: scaleX(1);
+  }
+`}</style>
+
 const NavLinks = () => {
     const pathname = usePathname();
 
