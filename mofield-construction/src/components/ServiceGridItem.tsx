@@ -9,7 +9,7 @@ const ServiceGridItem = ({title, icon, text, lightColor, darkColor, tags}: {titl
     <motion.div initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.2 }} className={`flex flex-col ${lightColor} ${darkColor || ""} text-black p-6 md:p-24 gap-6`}>
+          viewport={{ once: true, amount: 0.1 }} className={`flex flex-col ${lightColor} ${darkColor || ""} text-black p-6 md:p-24 gap-6`}>
       <div className="flex items-center justify-between xl:justify-start">
         <h4 className={`text-3xl lg:text-5xl font-bold pr-4 md:pr-10 ${bitter.className}`}>{title}</h4>
         <Image className="" src={icon} width={70} height={70} alt="icon"></Image>
