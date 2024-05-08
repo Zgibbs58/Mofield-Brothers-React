@@ -10,7 +10,7 @@ const ScrollDown = () => {
   return (
     <motion.div style={{ opacity }} className="absolute bottom-6 text-center text-white">
       <p className='text-2xl'>Learn More</p>
-      <p className="animate-bounce text-white text-4xl">&#x1F847;
+      <p className="animate-bounce text-white text-4xl">&darr;
 </p>
       <style jsx>{`
         .animate-bounce {
