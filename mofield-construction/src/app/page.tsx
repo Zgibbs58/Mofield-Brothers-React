@@ -3,6 +3,7 @@ import ServiceCards from "../components/ServiceCards";
 import Image from "next/image";
 import ScrollDown from "../components/ScrollDown";
 import ServiceTitle from "../components/ServiceTitle";
+import ProjectAnimation from "../components/ProjectAnimation";
 import Gallery from "../components/Gallery";
 import photos from "../components/homePhotos";
 import ContactForm from "../components/ContactForm";
@@ -34,8 +35,10 @@ export default function Home() {
       </div>
         <About />
         <section className='px-6 md:px-24 py-48 md:py-64'>
-          <h3 className={`text-4xl md:text-6xl font-semibold text-left pb-12 ${bitter.className}`}>Services</h3>
-          {/* <ServiceTitle /> */}
+          <div className="flex pb-12 items-center">
+            <h3 className={`text-4xl md:text-6xl font-semibold text-left ${bitter.className}`}>Services</h3>
+            <ServiceTitle />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-10 md:gap-6">
             <ServiceCards scrollProgress={0.4} img={"/images/waterSewerSm.jpg"} title={"Water & Sewer Lines"} text={"Overflowing with experience and craftsmanship, we deliver on quality and precision. From residential projects to large-scale utility endeavors, we're equipped to handle it all."} />
             <ServiceCards scrollProgress={0.42} img={"/images/excavationSm.jpg"} title={"Excavation"} text={"Let us do what we do best, DIG! Our excavation services include land clearing, leveling, rock hammering, and brush clearing, all executed with precision and efficiency."} />
@@ -44,7 +47,10 @@ export default function Home() {
           </div>
         </section>
         <section className={`px-6 md:px-24 text-center`}>
-          <h3 className={`text-4xl md:text-6xl text-left font-semibold pb-12 ${bitter.className}`}>Projects</h3>
+          <div className="flex items-center pb-12">
+            <h3 className={`text-4xl md:text-6xl text-left font-semibold ${bitter.className}`}>Projects</h3>
+            <ProjectAnimation />
+          </div>
           <Gallery photos={photos}/>
           <Link className="btn btn-outline mt-6" href={"/projects"}>Project Gallery</Link>
         </section>

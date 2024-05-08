@@ -35,21 +35,21 @@ body {
 
 /* Light mode logo */
 @media (prefers-color-scheme: light) {
-  .logo {
-    background-image: var(--logo-light);
+  .excavatorIcon {
+    fill: #000000;
+  }
+  .dumpTruckIcon {
+    fill: #000000;
   }
 }
 
 /* Dark mode logo*/
 @media (prefers-color-scheme: dark) {
-  .logo {
-    background-image: var(--logo-dark);
+  .excavatorIcon {
+    fill: #dca54c;
   }
-  .icon-svg path {
-    fill: #ffffff;
-  }
-  .icon-svg circle {
-    fill: #ffffff;
+  .dumpTruckIcon {
+    fill: #dca54c;
   }
 }
 

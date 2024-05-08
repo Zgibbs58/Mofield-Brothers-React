@@ -5,12 +5,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const ScrollDown = () => {
 
     const { scrollYProgress } = useScroll();
-    const opacity = useTransform(scrollYProgress, [0, 0.1, 0.15], [1, 0.2, 0]);
+    const opacity = useTransform(scrollYProgress, [0, 0.1, 0.11], [1, 0.05, 0]);
 
   return (
-    <motion.div style={{ opacity }} className="absolute bottom-5 text-center text-white">
-      <p className='text-2xl'>Discover More</p>
-      <p className="animate-bounce text-white text-3xl">&#129095;</p>
+    <motion.div style={{ opacity }} className="absolute bottom-6 text-center text-white">
+      <p className='text-2xl'>Learn More</p>
+      <p className="animate-bounce text-white text-4xl">&#x1F847;
+</p>
       <style jsx>{`
         .animate-bounce {
           animation: bounce 0.5s infinite;
@@ -19,11 +20,11 @@ const ScrollDown = () => {
         }
         @keyframes bounce {
           from {
-            transform: translateY(-20px);
+            transform: translateY(-10px);
             opacity: 0;
           }
           to {
-            transform: translateY(0);
+            transform: translateY(10px);
             opacity: 1;
           }
         }
