@@ -2,18 +2,28 @@
 import { AnimationProps, motion } from 'framer-motion';
 import { SVGProps } from 'react';
 
-interface PathProps extends SVGProps<SVGPathElement>, AnimationProps {
+interface PathProps extends Omit<SVGProps<SVGPathElement>, 'ref'> {
   isOpen?: boolean;
 }
 
-const Path: React.FC<PathProps> = ({ isOpen, ...rest }) => (
+interface PathProps extends Omit<SVGProps<SVGPathElement>, 'ref'> {
+  isOpen?: boolean;
+  variants?: any; // Add the 'variants' property to the 'PathProps' interface
+  initial?: boolean; // Add the 'initial' property to the 'PathProps' interface
+  transition?: any; // Add the 'transition' property to the 'PathProps' interface
+}
+
+const Path: React.FC<PathProps> = ({ isOpen, d, variants, initial, transition }) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
     stroke="rgb(243 244 246)"
     strokeLinecap="round"
     animate={isOpen ? 'open' : 'closed'}
-    {...rest}
+    d={d}
+    variants={variants}
+    initial={initial}
+    transition={transition}
   />
 );
 
