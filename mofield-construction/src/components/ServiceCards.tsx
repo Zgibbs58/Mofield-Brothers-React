@@ -17,7 +17,7 @@ const ServiceCards = ({img, title, text}: {img: string, title: string, text: str
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true, amount: 0.2 }}
-        className="card card-compact bg-base-200 rounded-md shadow-xl shadow-base-300 w-full h-96"
+        className="card card-compact bg-base-200 rounded-md shadow-xl w-full h-96"
           >
             <figure className=''><Image width={700} height={200} src={img} alt={title}></Image></figure>
             <div className="card-body">

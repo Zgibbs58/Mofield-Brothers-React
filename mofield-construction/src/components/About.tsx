@@ -13,7 +13,7 @@ const About = () => {
         transition={{ duration: 0.5 }}
         viewport={{ once: true, amount: 0.2 }}
         className="flex flex-row flex-wrap xl:flex-nowrap justify-center items-center gap-6 xl:gap-12 px-6 md:px-24 pt-48">
-        <Image className="object-cover rounded-md shadow-xl shadow-base-300" width={1200} height={1200} src={"/images/aboutImage.jpg"} alt="Mofield brothers and dad" />
+        <Image className="object-cover rounded-md shadow-xl" width={1200} height={1200} src={"/images/aboutImage.jpg"} alt="Mofield brothers and dad" />
       <div className="flex flex-col gap-6 xl:w-2/3">
         <h2 className="text-4xl md:text-6xl font-semibold">Mofield Brothers Construction</h2>
         <p className="">
