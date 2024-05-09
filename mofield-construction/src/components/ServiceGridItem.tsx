@@ -18,8 +18,8 @@ const ServiceGridItem = ({title, icon, text, lightColor, darkColor, tags}: {titl
         {text}
       </p>
       <div className="flex gap-2 flex-wrap">
-        {tags.map((tag) => (
-            <p className="border border-black rounded-full px-4">{tag}</p>
+        {tags.map((tag, index) => (
+            <p key={index} className="border border-black rounded-full px-4">{tag}</p>
         ))}
       </div>
     </motion.div>

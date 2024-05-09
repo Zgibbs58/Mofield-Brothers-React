@@ -122,10 +122,20 @@ const Contact = () => {
         <p className="text-2xl sm:text-3xl font-bold mb-4">Thanks, {modalName}!</p>
         <p className="sm:text-lg">We&apos;ll review your message and get back to you as soon as possible.</p>{" "}
       </ContactModal>
-    <motion.form initial={{ opacity: 0, x: -50 }}
+      <motion.div
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.4 }} className="w-full md:w-1/2 " onSubmit={handleSubmit}>
+          viewport={{ once: true, amount: 0.2 }}
+            className="flex justify-start text-left md:gap-8 lg:gap-16  py-12 md:py-24 flex-wrap md:flex-nowrap"
+          >
+            <div className='w-full md:w-1/2 flex flex-col text-left pb-4'>
+              <h4 className={`text-4xl md:text-6xl font-semibold py-4 ${bitter.className}`}>Get in Touch</h4>
+              <p className='text-md md:text-lg'>
+                We're here to help with your construction needs! Whether you have questions about our services or want to discuss a potential project, feel free to reach out. We're just a message away and look forward to speaking with you.
+              </p>
+            </div>
+        <form className="w-full md:w-1/2 " onSubmit={handleSubmit}>
               <p className="text-red-500 text-md font-semibold italic mb-4">{errorMessage}</p>
               <div className="flex flex-wrap pb-4">
                 <div className="w-full pb-2 md:pb-2">
@@ -182,7 +192,8 @@ const Contact = () => {
               >
                 Send
               </button>
-            </motion.form>
+            </form>
+        </motion.div>
     </>
   )
 }

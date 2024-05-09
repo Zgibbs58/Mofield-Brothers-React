@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,ts,tsx,jsx}"],
+  content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       backgroundImage: {
@@ -13,6 +13,19 @@ module.exports = {
       },
       height: {
         100: "40rem",
+      },
+      animation: {
+        shimmer: "shimmer 2s linear infinite",
+      },
+      keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
       },
     },
   },
@@ -29,34 +42,6 @@ module.exports = {
           "base-300": "#475569",
         },
       },
-      // {
-      //   light: {
-      //     mylighttheme: {
-      //       primary: "#facc15",
-      //       secondary: "#1f2937",
-      //       accent: "#f1c40f",
-      //       neutral: "#6b7280",
-      //       "base-100": "#f3f4f6",
-      //       info: "#0000ff",
-      //       success: "#00ff00",
-      //       warning: "#f43f5e",
-      //       error: "#ff0000",
-      //     },
-      //   },
-      //   dark: {
-      //     mydarktheme: {
-      //       primary: "#facc15",
-      //       secondary: "#1f2937",
-      //       accent: "#6b7280",
-      //       neutral: "#6b7280",
-      //       "base-100": "#1f2937", // Adjust background color for dark mode
-      //       info: "#0000ff",
-      //       success: "#38a169",
-      //       warning: "#dd6b20",
-      //       error: "#e53e3e",
-      //     },
-      //   },
-      // },
     ],
   },
 };

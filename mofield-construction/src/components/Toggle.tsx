@@ -33,7 +33,7 @@ interface ToggleProps {
 }
 
 export const Toggle: React.FC<ToggleProps> = ({ toggle, isOpen }) => (
-  <button className="p-3 rounded-full z-20 relative" onClick={toggle} aria-label="Toggle Menu">
+  <button className="z-20 relative" onClick={toggle} aria-label="Toggle Menu">
     <svg width="26" height="26" viewBox="0 1 22 18" className="block mx-auto">
       <Path
         d="M 2 2.5 L 20 2.5"

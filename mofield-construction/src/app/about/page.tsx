@@ -13,10 +13,12 @@ export default function about() {
         <div className="bg-yellow-800 bg-opacity-30 h-full w-full bg-gradient-to-br from-yellow-950 dark:from-stone-800 dark:bg-stone-900 dark:bg-opacity-40"></div>
             <h3 className={`text-4xl md:text-6xl font-semibold text-white py-12 ${bitter.className}`}>About</h3>
     </div>
-    <motion.section initial={{ opacity: 0, x: 50 }}
+    <motion.section 
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.1 }} className="flex flex-row flex-wrap xl:flex-nowrap justify-center items-center gap-6 xl:gap-12 py-16 md:py-64 px-6 md:px-24">
+          viewport={{ once: true, amount: 0.1 }} 
+          className="flex flex-row flex-wrap xl:flex-nowrap justify-center items-center gap-6 xl:gap-12 py-24 px-6 md:px-24">
       <Image className="object-cover xl:w-1/2" width={1200} height={1200} src={"/images/aboutImage.jpg"} alt="Mofield brothers and dad"></Image>
       <div className="flex flex-col gap-6 xl:w-1/2">
         <h2 className="text-4xl md:text-6xl font-semibold">Mofield Brothers Construction</h2>

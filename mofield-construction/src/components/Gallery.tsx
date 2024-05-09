@@ -6,6 +6,7 @@ import "yet-another-react-lightbox/styles.css";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import { motion } from "framer-motion";
+import { ContainerScroll, Card } from "../components/ui/container-scroll-animation"; // Import from the file where you have defined these components
 
 const Gallery = ({photos}: {photos: any[]}) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -16,7 +17,8 @@ const Gallery = ({photos}: {photos: any[]}) => {
     initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.2 }}>
+          viewport={{ once: true, amount: 0.2 }}
+          className="">
       <PhotoAlbum
         photos={photos}
         sizes={{

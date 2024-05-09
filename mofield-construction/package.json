@@ -10,16 +10,17 @@
   },
   "dependencies": {
     "@iconify/react": "^4.1.1",
-    "clsx": "^2.1.0",
-    "framer-motion": "^11.0.24",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.1.9",
     "next": "^14.1.4",
     "next-themes": "^0.3.0",
     "nodemailer": "^6.9.13",
     "react": "^18",
     "react-dom": "^18",
+    "react-element-to-jsx-string": "^15.0.0",
     "react-intersection-observer": "^9.10.2",
     "react-photo-album": "^2.3.1",
-    "tailwind-merge": "^2.2.2",
+    "tailwind-merge": "^2.3.0",
     "yet-another-react-lightbox": "^3.17.2"
   },
   "devDependencies": {

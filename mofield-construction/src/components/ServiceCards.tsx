@@ -3,35 +3,24 @@ import {useEffect, useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, useScroll, useTransform } from "framer-motion";
+import { ContainerScroll, Card } from "../components/ui/container-scroll-animation"; // Import from the file where you have defined these components
 
 
-const ServiceCards = ({scrollProgress, img, title, text}: {scrollProgress: number, img: string, title: string, text: string}) => {
-const [width, setWidth] = useState<number>(0);
- useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setWidth(window.innerWidth);
-    }
-  }, []);
 
-  if (width < 640) {
-    scrollProgress += 0.1;
-  }
-
-  const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0.2, scrollProgress, 1], [0, 1, 1]);
-  const x = useTransform(scrollYProgress, [0.2, scrollProgress, 1], ['50vw', '0vw', '0vw']);
+const ServiceCards = ({img, title, text}: {img: string, title: string, text: string}) => {
+  
 
   return (
     <>
     <motion.div 
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.1 }}
-          className="card card-compact bg-base-200 w-full h-full shadow-xl"
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="card card-compact bg-base-200 rounded-md shadow-xl shadow-base-300 w-full h-96"
           >
-            <figure><Image width={700} height={200} src={img} alt={title}></Image></figure>
-            <div className="card-body gap-4">
+            <figure className=''><Image width={700} height={200} src={img} alt={title}></Image></figure>
+            <div className="card-body">
               <h2 className="card-title text-xl md:text-2xl">
                 {title}
               </h2>
