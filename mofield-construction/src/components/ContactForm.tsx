@@ -89,7 +89,8 @@ const Contact = () => {
       //next line for testing locally
       // const response = await fetch("http://localhost:3000/api/contact", {
       //next line for production
-      const response = await fetch("https://mofield-brothers-react.vercel.app/api/contact", {
+      // const response = await fetch("https://mofield-brothers-react.vercel.app/api/contact", {
+      const response = await fetch("https://www.mofieldbrothers.com/api/contact", {
         method: "POST",
         // headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, subject, message }),
