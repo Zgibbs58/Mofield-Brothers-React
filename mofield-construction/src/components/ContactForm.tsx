@@ -164,69 +164,71 @@ const Contact = () => {
                 We're here to help with your construction needs! Whether you have questions about our services or want to discuss a potential project, feel free to reach out. We're just a message away and look forward to speaking with you.
               </p>
             </div>
-        <form className="w-full md:w-1/2 " onSubmit={handleSubmit}>
-              <p className="text-red-500 text-md font-semibold italic mb-4">{errorMessage}</p>
-              <div className="flex flex-wrap pb-4">
-                <div className="w-full pb-2 md:pb-2">
-                  <input
-                    className="block w-full border-gray-800 dark:border-base-content border-b py-2 px-2 focus:outline-none bg-base-100"
-                    id="name"
-                    type="text"
-                    placeholder="Name"
-                    name="name"
-                    autoComplete='name'
-                    value={name}
-                    onChange={(e) => handleInputChange(e, "name")}
-                    onBlur={() => handleBlur("name")}
-                  />
-                  <p id="nameError" className="text-red-500 text-xs italic pt-1"></p>
-                </div>
-              </div>
-              <div className="flex flex-wrap pb-8">
-                <div className="w-full">
-                  <input
-                    className="block w-full border-gray-800 dark:border-base-content border-b py-2 px-2 focus:outline-none bg-base-100"
-                    id="email"
-                    placeholder="user@gmail.com"
-                    type="email"
-                    value={email}
-                    name="email"
-                    autoComplete='email'
-                    onChange={(e) => handleInputChange(e, "email")}
-                    onBlur={()=>handleBlur("email")}
-                  />
-                  <p id="emailError" className="text-red-500 text-xs italic pt-1"></p>
-                </div>
-              </div>
-              <div className="flex flex-wrap">
-                <div className="w-full">
-                  <label className="block tracking-wide text-md pb-2" htmlFor="message">
-                    Message
-                  </label>
-                  <textarea
-                    className="no-resize appearance-none block w-full border border-gray-800 dark:border-base-content rounded py-3 px-4 pb-3 leading-tight h-48 resize-none focus:outline-none bg-base-100"
-                    id="message"
-                    name="message"
-                    placeholder='Enter your message here...'
-                    value={message}
-                    onChange={(e) => handleInputChange(e, "message")}
-                    onBlur={() => handleBlur("message")}
-                  ></textarea>
-                  <p id="messageError" className="text-red-500 text-xs italic pt-1"></p>
-                </div>
-              </div>
-              <button
-                className="text-base-content bg-primary dark:bg-base-content dark:text-secondary hover:bg-yellow-600 w-full my-6 py-2 text-xl font-bold rounded-full ease-in-out duration-300"
-                type="submit"
-              >
-                Send
-              </button>
-            </form>
-            <div>
-  This site is protected by reCAPTCHA and the Google
-  <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-  <a href="https://policies.google.com/terms">Terms of Service</a> apply.
-</div>
+            <div className='w-full md:w-1/2'>
+              <form className="" onSubmit={handleSubmit}>
+                    <p className="text-red-500 text-md font-semibold italic mb-4">{errorMessage}</p>
+                    <div className="flex flex-wrap pb-4">
+                      <div className="w-full pb-2 md:pb-2">
+                        <input
+                          className="block w-full border-gray-800 dark:border-base-content border-b py-2 px-2 focus:outline-none bg-base-100"
+                          id="name"
+                          type="text"
+                          placeholder="Name"
+                          name="name"
+                          autoComplete='name'
+                          value={name}
+                          onChange={(e) => handleInputChange(e, "name")}
+                          onBlur={() => handleBlur("name")}
+                        />
+                        <p id="nameError" className="text-red-500 text-xs italic pt-1"></p>
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap pb-8">
+                      <div className="w-full">
+                        <input
+                          className="block w-full border-gray-800 dark:border-base-content border-b py-2 px-2 focus:outline-none bg-base-100"
+                          id="email"
+                          placeholder="user@gmail.com"
+                          type="email"
+                          value={email}
+                          name="email"
+                          autoComplete='email'
+                          onChange={(e) => handleInputChange(e, "email")}
+                          onBlur={()=>handleBlur("email")}
+                        />
+                        <p id="emailError" className="text-red-500 text-xs italic pt-1"></p>
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap">
+                      <div className="w-full">
+                        <label className="block tracking-wide text-md pb-2" htmlFor="message">
+                          Message
+                        </label>
+                        <textarea
+                          className="no-resize appearance-none block w-full border border-gray-800 dark:border-base-content rounded py-3 px-4 pb-3 leading-tight h-48 resize-none focus:outline-none bg-base-100"
+                          id="message"
+                          name="message"
+                          placeholder='Enter your message here...'
+                          value={message}
+                          onChange={(e) => handleInputChange(e, "message")}
+                          onBlur={() => handleBlur("message")}
+                        ></textarea>
+                        <p id="messageError" className="text-red-500 text-xs italic pt-1"></p>
+                      </div>
+                    </div>
+                    <button
+                      className="text-base-content bg-primary dark:bg-base-content dark:text-secondary hover:bg-yellow-600 w-full my-6 py-2 text-xl font-bold rounded-full ease-in-out duration-300"
+                      type="submit"
+                    >
+                      Send
+                    </button>
+                  </form>
+                  <div>
+                    This site is protected by reCAPTCHA and the Google
+                    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                  </div>
+            </div>
         </motion.div>
     </>
   )
