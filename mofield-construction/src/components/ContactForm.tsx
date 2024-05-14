@@ -11,6 +11,8 @@ const bitter = Bitter({subsets: ["latin"] });
 
 const Contact = () => {
 
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -83,16 +85,12 @@ const Contact = () => {
       return;
     }
 
-    const { executeRecaptcha } = useGoogleReCaptcha();
-
     if (!executeRecaptcha) {
       console.log("not available to execute recaptcha")
       return;
     }
 
     const gRecaptchaToken = await executeRecaptcha('inquirySubmit');
-
-    ///
 
     const response = await fetch("/api/recaptchaSubmit", {
       method: "POST",
