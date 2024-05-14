@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { validateEmail } from "../../libs/utils";
 import { Bitter } from "next/font/google";
 import ContactModal from "./ContactModal";
-import Image from "next/image";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 const bitter = Bitter({subsets: ["latin"] });
 
@@ -81,6 +81,35 @@ const Contact = () => {
     if (!name || !email || !message || !validateEmail(email)) {
       setErrorMessage("Please complete all required sections of the form.");
       return;
+    }
+
+    const { executeRecaptcha } = useGoogleReCaptcha();
+
+    if (!executeRecaptcha) {
+      console.log("not available to execute recaptcha")
+      return;
+    }
+
+    const gRecaptchaToken = await executeRecaptcha('inquirySubmit');
+
+    ///
+
+    const response = await fetch("/api/recaptchaSubmit", {
+      method: "POST",
+      headers: {
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        gRecaptchaToken
+      })
+    });
+    const responseData = await response.json();
+
+   if (responseData?.success === true) {
+      console.log(`Success with score: ${responseData?.score}`);
+    } else {
+      console.log(`Failure with score: ${responseData?.score}`);
     }
 
     const subject = "Mofield Contact Form";
@@ -193,6 +222,11 @@ const Contact = () => {
                 Send
               </button>
             </form>
+            <div>
+  This site is protected by reCAPTCHA and the Google
+  <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+  <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+</div>
         </motion.div>
     </>
   )

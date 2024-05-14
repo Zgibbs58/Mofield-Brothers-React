@@ -33,6 +33,10 @@ body {
   background-color: var(--bg);
 }
 
+.grecaptcha-badge {
+  display: none;
+}
+
 /* Light mode logo */
 @media (prefers-color-scheme: light) {
   .excavatorIcon {

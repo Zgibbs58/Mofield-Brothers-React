@@ -3,6 +3,7 @@ import { Heebo } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import GoogleCaptchaWrapper from "@/components/GoogleCaptchaWrapper";
 
 const rokkitt = Heebo({ subsets: ["latin"] });
 
@@ -23,7 +24,9 @@ export default function RootLayout({
       </head>
       <body className={`overflow-x-hidden ${rokkitt.className}`}>
           <Header />
-            {children}
+            <GoogleCaptchaWrapper>
+              {children}
+            </GoogleCaptchaWrapper>
           <Footer />
       </body>
     </html>
