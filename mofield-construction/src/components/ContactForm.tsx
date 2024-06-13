@@ -9,7 +9,7 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 const bitter = Bitter({subsets: ["latin"] });
 
-const Contact = () => {
+const ContactForm = () => {
 
   const { executeRecaptcha } = useGoogleReCaptcha();
 
@@ -159,7 +159,7 @@ const Contact = () => {
             <div className='w-full md:w-1/2 flex flex-col text-left pb-4'>
               <h4 className={`text-4xl md:text-6xl font-semibold py-4 ${bitter.className}`}>Get in Touch</h4>
               <p className='text-md md:text-lg'>
-                We're here to help with your construction needs! Whether you have questions about our services or want to discuss a potential project, feel free to reach out. We're just a message away and look forward to speaking with you.
+                We&apos;re here to help with your construction needs! Whether you have questions about our services or want to discuss a potential project, feel free to reach out. We're just a message away and look forward to speaking with you.
               </p>
             </div>
             <div className='w-full md:w-1/2'>
@@ -232,4 +232,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default ContactForm
