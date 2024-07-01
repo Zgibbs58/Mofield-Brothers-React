@@ -1,5 +1,13 @@
 import { Bitter } from "next/font/google";
 import ContactForm from "../../components/ContactForm";
+import { Metadata } from "next";
+
+export const meta: Metadata = {
+  title: "Contact Us | Mofield Brothers Construction Company",
+  description: "Contact us for a free estimate on your next project.",
+  keywords: ["contact", "estimate", "project", "construction", "mofield", "mofield construction"],
+  robots: "index, follow",
+};
 
 const bitter = Bitter({subsets: ["latin"] });
 

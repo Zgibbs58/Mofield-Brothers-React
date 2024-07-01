@@ -3,6 +3,14 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import { Bitter } from "next/font/google";
 import Image from 'next/image';
+import { Metadata } from "next";
+
+export const meta: Metadata = {
+  title: "About | Mofield Brothers Construction Company",
+  description: "Learn more about the history and expertise of Mofield Brothers Construction Company.",
+  keywords: ["about", "history", "construction", "mofield", "mofield construction"],
+  robots: "index, follow",
+};
 
 const bitter = Bitter({subsets: ["latin"] });
 
