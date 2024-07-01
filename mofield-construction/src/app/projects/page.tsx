@@ -4,7 +4,7 @@ import photos from '../../components/galleryPhotos.js';
 import { Bitter } from "next/font/google";
 import { Metadata } from "next";
 
-export const meta: Metadata = {
+export const metadata: Metadata = {
   title: "Projects | Mofield Brothers Construction Company",
   description: "View our portfolio of completed projects.",
   keywords: ["projects", "portfolio", "construction", "mofield", "mofield construction"],

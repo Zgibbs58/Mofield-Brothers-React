@@ -11,6 +11,8 @@ const rokkitt = Heebo({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Mofield Brothers Construction Company, trusted Tennessee contractors",
   description: "Mofield Brothers Construction Company is a trusted Tennessee contractor specializing in water and sewer lines, directional drilling, excavation, and hauling.",
+  keywords: ["construction", "contractor", "Tennessee", "water and sewer", "directional drilling", "excavation", "hauling"],
+  robots: "index, follow",
 };
 
 export default function RootLayout({

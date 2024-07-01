@@ -5,7 +5,7 @@ import { Bitter } from "next/font/google";
 import Image from 'next/image';
 import { Metadata } from "next";
 
-export const meta: Metadata = {
+export const metadata: Metadata = {
   title: "About | Mofield Brothers Construction Company",
   description: "Learn more about the history and expertise of Mofield Brothers Construction Company.",
   keywords: ["about", "history", "construction", "mofield", "mofield construction"],

@@ -6,7 +6,7 @@ import ServiceGridItem from '@/components/ServiceGridItem';
 import { motion } from 'framer-motion';
 import { Metadata } from "next";
 
-export const meta: Metadata = {
+export const metadata: Metadata = {
   title: "Services | Mofield Brothers Construction Company",
   description: "Mofield Brothers Construction Company offers expert services in water and sewer, excavation, directional drilling, and hauling.",
   keywords: ["services", "water and sewer", "excavation", "directional drilling", "hauling", "mofield", "mofield construction"],
