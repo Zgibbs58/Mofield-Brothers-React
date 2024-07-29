@@ -12,6 +12,8 @@
   --warning: #dd6b20;
   --danger: #e53e3e; */
   --logo-light: url("/images/mofieldLogo.png");
+  max-width: 2500px;
+  margin: 0 auto;
 }
 
 @media (prefers-color-scheme: dark) {
